@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" >
+<head >
+   <meta charset="UTF-8" >
+   <title >Document</title >
+   <style >
+     * {
+       margin: 0;
+       padding: 0;
+     }
+     .box {
+       width: 350px;
+       height: auto;
+       margin: 100px;
+       position: relative;
+       border: 1px solid #ccc;
+     }
+     .big {
+       width: 800px;
+       height: 800px;
+       position: absolute;
+       top: 0;
+       left: 360px;
+       border: 1px solid #cccccc;
+       display: none;
+     }
+     .big img {
+       position: absolute;
+     }
+     .mask {
+       width: 175px;
+       height: 175px;
+       background: rgba(255, 255, 0, 0.4);
+       position: absolute;
+       top: 0;
+       left: 0;
+       cursor: move;
+       display: none;
+     }
+     .small {
+       position: relative;
+     }
+   </style >
+</head >
+<body >
+<div class="box" >
+   <div class="small" >
+      <img src="../../assets/images/mine.png" width="350" />
+      <div class="mask" ></div >
+   </div >
+   <div class="big" >
+      <img src="../../assets/images/mine.png" width="700" />
+   </div >
+</div >
+<script >
+  var box = document.getElementsByClassName('box');
+  var smallBox = box.children[0];
+  var bigBox = box.children[1];
+  var smallImage = smallBox.children[0];
+  var mask = smallBox.children[1];
+  var bigImage = bigBox.children[0];
+  // 1 鼠标经过的时候 显示 mask和bigBox ， 当鼠标离开box的时候隐藏mask和bigBox
+  //
+  // mouseenter   mouseleave     不会触发事件冒泡
+  // mouseover   mouseout        会触发事件冒泡
+  box.onmouseenter = function () {
+    // 显示 mask和bigBox
+    mask.style.display = 'block';
+    bigBox.style.display = 'block'
+  }
+  box.onmouseleave = function () {
+    mask.style.display = 'none';
+    bigBox.style.display = 'none';
+  }
+  // 2 当鼠标在盒子中移动的时候，让mask和鼠标一起移动
+  box.onmousemove = function (e) {
+    e = e || window.event;
+    // 获取鼠标在盒子中的位置，就是mask的坐标
+    var maskX = getPage(e).pageX - box.offsetLeft;
+    var maskY = getPage(e).pageY - box.offsetTop;
+    // 让鼠标出现在mask的中心点
+    maskX = maskX - mask.offsetWidth / 2;
+    maskY = maskY - mask.offsetHeight / 2;
+    // 把mask限制到box中
+    maskX = maskX < 0 ? 0 : maskX;
+    maskY = maskY < 0 ? 0 : maskY;
+    maskX = maskX > box.offsetWidth - mask.offsetWidth ? box.offsetWidth - mask.offsetWidth : maskX;
+    maskY = maskY > box.offsetHeight - mask.offsetHeight ? box.offsetHeight - mask.offsetHeight : maskY;
+    mask.style.left = maskX + 'px';
+    mask.style.top = maskY + 'px';
+    // 3 当mask移动的时候，让大图片移动
+    // 求 大图片移动的距离
+    // mask移动的距离 / mask最大能够移动的距离  = 大图片移动的距离 / 大图片最大能够移动的距离
+    // mask最大能够移动的距离
+    var maskMax = box.offsetWidth - mask.offsetWidth;
+    // 大图片最大能够移动的距离
+    var bigImageMax = bigImage.offsetWidth - bigBox.offsetWidth;
+    var bigImageX = maskX * bigImageMax / maskMax;
+    var bigImageY = maskY * bigImageMax / maskMax;
+    bigImage.style.left = -bigImageX + 'px';
+    bigImage.style.top = -bigImageY + 'px';
+  }
+
+</script >
+</body >
+</html >

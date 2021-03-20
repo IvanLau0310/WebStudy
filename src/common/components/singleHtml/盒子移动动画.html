@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" >
+<head >
+   <meta charset="UTF-8" >
+   <title >Document</title >
+   <style >
+     * {
+       margin: 0;
+     }
+     #box {
+       height: 100px;
+       width: 100px;
+       background: blue;
+       position: relative;
+     }
+   </style >
+</head >
+<body >
+<input type="button" value="开始" id="btn" >
+<div id="box" ></div >
+<script >
+  // 1.点击盒子能够向右移动
+  let btn = document.getElementById('btn');
+  let box = document.getElementById('box');
+  btn.onclick = function () {
+    //     box.style.left = box.offsetLeft + 10 + 'px';
+    let timerID = setInterval(function () {
+      let step = 6;
+      let target = 600;
+      if (box.offsetLeft >= target) {
+        // 停止计时器
+        clearInterval(timerID);
+        box.style.left = target + 'px';
+        return;
+      }
+      box.style.left = box.offsetLeft + step + 'px';
+    }, 30)
+  }
+  // 2.让盒子不停的向右移动
+
+
+</script >
+</body >
+</html >
