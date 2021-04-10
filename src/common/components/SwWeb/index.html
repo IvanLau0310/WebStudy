@@ -1,0 +1,2929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳外国语学校集团</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/easings.min.js"></script>
+    <!-- jQuery 动画效果扩展 -->
+    <script type="text/javascript" src="js/easing-min.js"></script>
+    <!-- vivus SVG格式图片的动画 -->
+    <script type="text/javascript" src="js/vivus.js"></script>
+    <!-- mousewheel 鼠标滚轮插件 -->
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <!-- iScroll js滚动插件 -->
+    <!-- <script src="js/iscroll.js"></script> -->
+
+    <div id="fullpage">
+        <!-- <div class="search">
+            <span style="font-size:18px;">
+                <form action="http://www.baidu.com/baidu" target="_blank">  
+                   <input class="inputbox" name="word" size="40" type="text" /> 
+                   <input class="word" value="搜索" type="submit" />  
+                </form> 
+            </span>
+        </div> -->
+        <div class="search">
+            <div class="delete"><img src="images/delete.png" alt=""></div>
+            <div class="search_box">
+                <input id="searchKeyword" type="text" placeholder="Search..." class="kw" onkeydown="searchkeydown(event, '#searchOk')">
+               <input type="button" placeholder="" id="searchOk" onclick="bingsearch();return false;" class="ok" value="搜索">
+           </div>
+        </div>
+        <!-- 第一个body -->
+        <div id="body_home" class="body_home section">
+            <div class="h1 h1prev">
+                <div class="d1">
+                    <div class="block">
+                        <div class="nav_l">
+                            <a href=""><div class="p">学生</div></a><i>|</i>
+                            <a href=""><div class="p">教职</div></a><i>|</i>
+                            <a href=""><div class="p">访客</div></a><i>|</i>
+                            <a href=""><div class="p">招聘</div></a>
+                        </div>
+                        <div class="nav_r">
+                            <div class="item"><img src="images/email.png" alt=""><a href=""><div class="p">办公邮箱</div></a></div>
+                            <div class="item"><img src="images/system.png" alt=""><a href=""><div class="p">办公系统</div></a></div>
+                            <div class="item"><img src="images/book.png" alt=""><a href=""><div class="p">智慧校园</div></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d2">
+                    <div id="boxd2" class="box">
+                        <a href="index.html"><img class="logo nota" src="images/schoolLogo.png" alt=""></a>
+                        <a class="nota" href="index.html">首页</a>
+                        <a class="a" href="page2.html">走进深外<div class="line"></div></a>
+                        <a class="a" href="page3.html">学校资讯<div class="line"></div></a>
+                        <a class="a" href="page4.html">教育教学<div class="line"></div></a>
+                        <a class="a" href="page5.html">学生空间<div class="line"></div></a>
+                        <a class="nota" href="page6.html">学校视频<div class="line"></div></a>
+                        <a class="a" href="page7.html">招生招聘<div class="line"></div></a>
+                        <div class="iconbox nota">
+                            <img id="search" class="icon" src="images/search.png" alt="">
+                            <img class="icon" src="images/EN.png" alt="">
+                        </div>
+                        <div class="nav-child">
+                            <div class="showitem">
+                                <div style="left: 10%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-1.png" alt="">
+                                        <div class="l-r">
+                                            <p>高标准</p>
+                                            <p>有特色</p>
+                                            <p>现代化</p>
+                                            <p>办国内外一流名校</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="page2.html">学校介绍</a></div>
+                                        <div class="item"><a href="">学校文化</a></div>
+                                        <div class="item"><a href="">学校荣誉</a></div>
+                                        <div class="item"><a href="">学校刊物</a></div>
+                                        <div class="item"><a href="">规章制度</a></div>
+                                        <div class="item"><a href="">党建工作</a></div>
+                                        <div class="item"><a href="">校友会</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showitem">
+                                <div style="left: 15%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/pageh-1.png" alt="">
+                                        <div class="l-r">
+                                            <p>振奋精神</p>
+                                            <p>紧密团结</p>
+                                            <p>攀登新的高峰</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="page8-1.html">学校新闻</a></div>
+                                        <div class="item"><a href="page8-2.html">通知公告</a></div>
+                                        <div class="item"><a href="page8-3.html">招标公告</a></div>
+                                        <div class="item"><a href="page8-4.html">媒体报道</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showitem">
+                                <div style="left: 25%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-3.png" alt="">
+                                        <div class="l-r">
+                                            <p>教书育人</p>
+                                            <p>治学严谨</p>
+                                            <p>勤奋博学</p>
+                                            <p>尊师友爱</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">课程建设</a></div>
+                                        <div class="item"><a href="">教研活动</a></div>
+                                        <div class="item"><a href="">名师工作室</a></div>
+                                        <div class="item"><a href="">教师培训</a></div>
+                                        <div class="item"><a href="">电子资源</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showitem">
+                                <div style="left: 30%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-4.png" alt="">
+                                        <div class="l-r">
+                                            <p>以人为本</p>
+                                            <p>和谐发展</p>
+                                            <p>为学生的终身幸福奠基</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">团委</a></div>
+                                        <div class="item"><a href="">少先队</a></div>
+                                        <div class="item"><a href="">学长团</a></div>
+                                        <div class="item"><a href="">社团联合会</a></div>
+                                        <div class="item"><a href="">广电中心</a></div>
+                                        <div class="item"><a href="">六大节</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="showitem">
+                                <div style="right: 10%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                            src="images/showbox-5.png" alt="">
+                                        <div class="l-r">
+                                            <p>高标准</p>
+                                            <p>有特色</p>
+                                            <p>现代化</p>
+                                            <p>办国内外一流名校</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">学校介绍</a></div>
+                                        <div class="item"><a href="">学校文化</a></div>
+                                        <div class="item"><a href="">学校荣誉</a></div>
+                                        <div class="item"><a href="">学校刊物</a></div>
+                                        <div class="item"><a href="">规章制度</a></div>
+                                        <div class="item"><a href="">党建工作</a></div>
+                                        <div class="item"><a href="">校友会</a></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="showitem">
+                                <div style="right: 5%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-6.png" alt="">
+                                        <div class="l-r">
+                                            <p>以人为本</p>
+                                            <p>和谐发展</p>
+                                            <p>为学生的终身幸福奠基</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">学生招生</a></div>
+                                        <div class="item"><a href="">教师招聘</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div id="button">
+                    <img style="height: 100%;" src="images/btn-bg.png" alt="">
+                    <div class="btn-1"><img src="images/btn-1.png" alt=""></div>
+                    <div class="btn-word"><img src="images/btn-word.png" alt=""></div>
+                    <div class="btn-arrow"><img src="images/btn-arrow.png" alt=""></div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe9.jpg); width: 100%;" class="child">
+                                <div class="text">深外集团</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe1.jpg); width: 100%;" class="child">
+                                <div class="text">2020体育节</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe2.jpg); width: 100%;" class="child">
+                                <div class="text">2020我校生物竞赛选手张咏妍，汪博伟获得两枚金牌</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe3.jpg); width: 100%;" class="child">
+                                <div class="text">2020高三成人礼</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe4.jpg); width: 100%;" class="child">
+                                <div class="text">2020科技节开幕式</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div> -->
+                        <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe5.jpg); width: 100%;" class="child">
+                                <div class="text">2020年12月25日外语节闭幕式</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe6.jpg); width: 100%;" class="child">
+                                <div class="text">国际部课堂</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe7.jpg); width: 100%;" class="child">
+                                <div class="text">集团成立</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div> -->
+                        <div class="swiper-slide">
+                            <div style="background-image: url(images/swipe8.jpg); width: 100%;" class="child">
+                                <div class="text">三十周年校庆</div>
+                                <a class="abanner" href=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <!-- <div class="swiper-pagination-swipe1"></div> -->
+            </div>
+        </div>
+        <!-- 主体 -->
+        <!-- 第二个body -->
+        <div id="body_b" class="body_b section">
+            <div class="h2 h2prev">
+                <div id="d1" class="d1">
+                    <div class="block">
+                        <div class="nav_l">
+                            <a href=""><div class="p">学生</div></a><i>|</i>
+                            <a href=""><div class="p">教职</div></a><i>|</i>
+                            <a href=""><div class="p">访客</div></a><i>|</i>
+                            <a href=""><div class="p">招聘</div></a>
+                        </div>
+                        <div class="nav_r">
+                            <div class="item"><img src="images/email.png" alt=""><a href=""><div class="p">办公邮箱</div></a></div>
+                            <div class="item"><img src="images/system.png" alt=""><a href=""><div class="p">办公系统</div></a></div>
+                            <div class="item"><img src="images/book.png" alt=""><a href=""><div class="p">智慧校园</div></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d2">
+                    <div id="boxd2-2" class="box">
+                        <div style="position: absolute;top: 0;left: 0;width: 100%;height: 15px;" class="transparent"></div>
+                        <a href="index.html"><img class="logo nota" src="images/schoolLog2.png" alt=""></a>
+                        <a class="nota" href="index.html">首页</a>
+                        <a class="a" href="page2.html">走进深外<div class="line"></div></a>
+                        <a class="a" href="page3.html">学校资讯<div class="line"></div></a>
+                        <a class="a" href="page4.html">教育教学<div class="line"></div></a>
+                        <a class="a" href="page5.html">学生空间<div class="line"></div></a>
+                        <a class="nota" href="page6.html">学校视频<div class="line"></div></a>
+                        <a class="a" href="page7.html">招生招聘<div class="line"></div></a>
+                        <div class="iconbox nota">
+                            <img id="search2" class="icon" src="images/search2.png" alt="">
+                            <img class="icon" src="images/EN2.png" alt="">
+                        </div>
+                        <div class="nav-child-2">
+                            <div class="showitem">
+                                <div style="left: 10%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-1.png" alt="">
+                                        <div class="l-r">
+                                            <p>高标准</p>
+                                            <p>有特色</p>
+                                            <p>现代化</p>
+                                            <p>办国内外一流名校</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="page2.html">学校介绍</a></div>
+                                        <div class="item"><a href="">学校文化</a></div>
+                                        <div class="item"><a href="">学校荣誉</a></div>
+                                        <div class="item"><a href="">学校刊物</a></div>
+                                        <div class="item"><a href="">规章制度</a></div>
+                                        <div class="item"><a href="">党建工作</a></div>
+                                        <div class="item"><a href="">校友会</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showitem">
+                                <div style="left: 15%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/pageh-1.png" alt="">
+                                        <div class="l-r">
+                                            <p>振奋精神</p>
+                                            <p>紧密团结</p>
+                                            <p>攀登新的高峰</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="page8-1.html">学校新闻</a></div>
+                                        <div class="item"><a href="page8-2.html">通知公告</a></div>
+                                        <div class="item"><a href="page8-3.html">招标公告</a></div>
+                                        <div class="item"><a href="page8-4.html">媒体报道</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showitem">
+                                <div style="left: 25%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-3.png" alt="">
+                                        <div class="l-r">
+                                            <p>教书育人</p>
+                                            <p>治学严谨</p>
+                                            <p>勤奋博学</p>
+                                            <p>尊师友爱</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">课程建设</a></div>
+                                        <div class="item"><a href="">教研活动</a></div>
+                                        <div class="item"><a href="">名师工作室</a></div>
+                                        <div class="item"><a href="">教师培训</a></div>
+                                        <div class="item"><a href="">电子资源</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showitem">
+                                <div style="left: 30%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-4.png" alt="">
+                                        <div class="l-r">
+                                            <p>以人为本</p>
+                                            <p>和谐发展</p>
+                                            <p>为学生的终身幸福奠基</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">团委</a></div>
+                                        <div class="item"><a href="">少先队</a></div>
+                                        <div class="item"><a href="">学长团</a></div>
+                                        <div class="item"><a href="">社团联合会</a></div>
+                                        <div class="item"><a href="">广电中心</a></div>
+                                        <div class="item"><a href="">六大节</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="showitem">
+                                <div style="right: 10%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                            src="images/showbox-5.png" alt="">
+                                        <div class="l-r">
+                                            <p>高标准</p>
+                                            <p>有特色</p>
+                                            <p>现代化</p>
+                                            <p>办国内外一流名校</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">学校介绍</a></div>
+                                        <div class="item"><a href="">学校文化</a></div>
+                                        <div class="item"><a href="">学校荣誉</a></div>
+                                        <div class="item"><a href="">学校刊物</a></div>
+                                        <div class="item"><a href="">规章制度</a></div>
+                                        <div class="item"><a href="">党建工作</a></div>
+                                        <div class="item"><a href="">校友会</a></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="showitem">
+                                <div style="right: 5%;" class="showbox">
+                                    <div class="left-box">
+                                        <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                             src="images/showbox-6.png" alt="">
+                                        <div class="l-r">
+                                            <p>以人为本</p>
+                                            <p>和谐发展</p>
+                                            <p>为学生的终身幸福奠基</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="item"><a href="">学生招生</a></div>
+                                        <div class="item"><a href="">教师招聘</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main" class="main">
+                
+                <div id="part-1" class="part_1">
+                    <div class="innerbox">
+                        <div class="head">
+                            <i class="tab1 chose">新闻</i>&nbsp;·&nbsp;<i class="tab2">通知</i>
+                            <div class="right-box">
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="clock" src="images/clock.png" alt="">
+                                        <img class="hoverclock" src="images/clock2.png" alt="">
+                                    </div>
+                                    <p>更多新闻</p>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="clock" src="images/clock.png" alt="">
+                                        <img class="hoverclock" src="images/clock2.png" alt="">
+                                    </div>
+                                    <p>校内通知</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-1">
+                            <div class="box-1-l">
+                                <a class="news" href="">
+                                    <img src="images/pic1.png" alt="">
+                                    <div class="p">深圳外语节闭幕式晚会</div>
+                                </a>
+                                <a class="notice" href="">
+                                    <img src="images/pic2.png" alt="">
+                                    <div class="p">深圳学生组织开展活动</div>
+                                </a>
+                            </div>
+                            <div class="box-1-r">
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>“认真上好每一堂课，认真教好每一个学生 ” ——罗来金校长与外小全体教师座谈交流</p>
+                                </a>
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>不负梦想，再铸辉煌 | 深外（集团）举行高考 “百日倒计时”誓师大会</p>
+                                </a>
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>爱国求知，追求卓越 | 深外（集团）各校部开 学第一课</p>
+                                </a>
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>为“阅”者容 | 深外（集团）高中部图书馆获 评“最美阅读空间”</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>为“阅”者容 | 深外（集团）高中部图书馆获 评“最美阅读空间”</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>爱国求知，追求卓越 | 深外（集团）各校部开 学第一课</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>不负梦想，再铸辉煌 | 深外（集团）举行高考 “百日倒计时”誓师大会</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>“认真上好每一堂课，认真教好每一个学生 ” ——罗来金校长与外小全体教师座谈交流</p>
+                                </a>
+                            </div>      
+                        </div>
+                        <div class="box-1">
+                            <div class="box-1-l">
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>连续5年居广东第一、清北保送生近50人！高 考即将放榜，深圳这所学校引关注</p>
+                                </a>
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>深圳外国语学校龙华高中部2020年自主招生 二类</p>
+                                </a>
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>语言艺术交流协会｜用心倾听信件背后的故事， 用爱感受语言文字的美好</p>
+                                </a>
+                                <a href="page9-1.html" class="little-box news">
+                                    <p>深外荣耀 | 保送清华、获评“广东省优秀学 生”，听贺欣悦的深外故事</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>深外荣耀 | 保送清华、获评“广东省优秀学 生”，听贺欣悦的深外故事</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>语言艺术交流协会｜用心倾听信件背后的故事， 用爱感受语言文字的美好</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>深圳外国语学校龙华高中部2020年自主招生 二类</p>
+                                </a>
+                                <a href="page9-2.html" class="little-box notice">
+                                    <p>连续5年居广东第一、清北保送生近50人！高 考即将放榜，深圳这所学校引关注</p>
+                                </a> 
+                            </div>
+                            <div class="box-1-r">
+                                <a class="news" href="">
+                                    <img src="images/pic2.png" alt="">
+                                    <div class="p">深圳学生组织开展活动</div>
+                                </a>
+                                <a class="notice" href="">
+                                    <img src="images/pic1.png" alt="">
+                                    <div class="p">深圳外语节闭幕式晚会</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="part-2" class="part-2">
+                    <div id="schoolBox" class="bigbox">
+                        <div class="title">
+                            <div class="name">集团 · 校部
+                            </div>
+                            <a href="" class="bottom">
+                                <div class="img">
+                                    <img class="clock" src="images/clock.png" alt="">
+                                    <img class="hoverclock" src="images/clock2.png" alt="">
+                                </div>
+                                <div class="text">查看更多</div>
+                            </a>
+                        </div>
+                        <div class="firstgroup">
+                            <div class="chosebox">
+                                <div class="box1"></div>
+                                <div class="box2"></div>
+                            </div>
+                            <div class="item odd"><a href=""><img src="images/schooltype1.png" alt=""></a>
+                                <div class="sname">高中部</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                            <div class="item odd2"><a href=""><img src="images/schooltype5.png" alt=""></a>
+                                <div class="sname">国际部</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                            <div class="item even"><a href=""><img src="images/schooltype2.png" alt=""></a>
+                                <div class="sname">初中部</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                            <div class="item even2"><a href=""><img src="images/schooltype6.png" alt=""></a>
+                                <div class="sname">湾区学校</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                            <div class="item odd"><a href=""><img src="images/schooltype3.png" alt=""></a>
+                                <div class="sname">龙华高中部</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                            <div class="item odd2"><a href=""><img src="images/schooltype7.png" alt=""></a>
+                                <div class="sname">龙华学校</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                            <div class="item even"><a href=""><img src="images/schooltype4.png" alt=""></a>
+                                <div class="sname">小学部</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                            <div class="item even2"><a href=""><img src="images/schooltype8.png" alt=""></a>
+                                <div class="sname">宝安校区</div>
+                                <a href="#">
+                                    <p>查看更多&nbsp;&nbsp;———</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="part-3" class="part-3">
+                    <div class="innerbox">
+                        <div class="box-t"><a href=""><img src="images/pic3.jpg" alt=""></a>
+                            <div class="box-r">
+                                <a href=""><img src="images/pic4.png" alt=""></a>
+                                <div class="text">
+                                    <div class="title">我校袁智斌老师在核心期刊《数学教育学报》上发 表新论文</div>
+                                    <div class="word">开学伊始，传来喜讯——我国目前最高层次的数学教育专业学术刊物、
+                                        中国联合国教科文组织指导刊物、全国中文核心期刊、中国科技核心期
+                                        刊、RCCSE中国核心学术期刊（A）《数学教育学报》于2013年2月又
+                                        刊载发表了我校数学组教师袁智斌老师的题为《同课异构、精彩纷呈、
+                                        视频研究、促进发展——对“直线与圆的位置关系”公开课视频的点....
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-l">
+                                <div class="name">教学 · 科研</div>
+                                <a href="" class="more">
+                                    <div class="img">
+                                        <img class="clock" src="images/clock.png" alt="">
+                                        <img class="hoverclock" src="images/clock2.png" alt="">
+                                    </div>
+                                    <div class="text">查看更多</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-bottom"></div>
+                    </div>
+                </div>
+                <div id="part-4" class="part-4">
+                    <div class="innerbox">
+                        <a href="" class="left-box">
+                            <img src="images/pic5.png" alt="">
+                            <div class="p">学年学生表彰大会</div>
+                        </a>
+                        <div id="r-box" class="right-box">
+                            <div class="title">学生 · 动态
+                                <a href="" class="more">
+                                    <div class="img">
+                                        <img class="clock" src="images/clock.png" alt="">
+                                        <img class="hoverclock" src="images/clock2.png" alt="">
+                                    </div>
+                                    <p>查看更多</p>
+                                </a>
+                            </div>
+                            <a href=""><img src="images/pic6.png" alt=""></a>
+                            <div class="i">AP班毕业留影</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="part-5" class="part-5">
+                    <div class="bigbox">
+                        <div class="box-1">
+                            <a href="" id="svg1" class="item d1"><img class="bg" src="images/p5-pic1.png" alt="">
+                                <div class="iconbox"><svg id="my-svg" t="1617850084808" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1005" width="51" height="51"><path d="M901.632 255.808a22.4 22.4 0 0 1-9.088 26.88l-4.032 1.92-234.112 87.744-27.328 136.576 52.8 211.84-8.96 8.96a267.776 267.776 0 0 1-105.856 65.152l0.064 206.08a22.4 22.4 0 0 1-44.352 4.48l-0.448-4.48v-195.456a267.84 267.84 0 0 1-212.16-60.544l-148.992 148.928a22.4 22.4 0 0 1-34.88-27.584l3.2-4.032 148.992-148.992a268.096 268.096 0 0 1-63.04-159.616L213.12 540.16v-18.368l122.24-24.448a39.04 39.04 0 0 0 30.912-32.192l0.448-6.08V378.24H143.36a22.4 22.4 0 0 1-4.48-44.352l4.48-0.448h487.424l241.984-90.752a22.4 22.4 0 0 1 28.8 13.12zM607.488 378.24H411.52v80.832c0 37.12-24.32 69.44-59.2 80.128l-8.192 2.112-85.44 17.024 0.64 7.36a223.36 223.36 0 0 0 124.8 175.552l11.648 5.248a223.36 223.36 0 0 0 223.36-30.592l11.008-9.28L582.4 514.88l-0.192-9.856 25.28-126.784zM512 56.96a114.56 114.56 0 1 1 0 229.12A114.56 114.56 0 0 1 512 56.96z m0 44.8a69.76 69.76 0 1 0 0 139.52 69.76 69.76 0 0 0 0-139.52z" fill="#ffffff" p-id="1006"></path></svg>
+                                    <p>艺术节</p>
+                                </div>
+                            </a>
+                            <a href="" class="item d2"><img class="bg" src="images/p5-pic2.png" alt="">
+                                <div class="iconbox"><img src="images/p5-icon2.png" alt="">
+                                    <p>体育节</p>
+                                </div>
+                            </a>
+                            <a href="" class="item d3"><img class="bg" src="images/p5-pic3.png" alt="">
+                                <div class="iconbox"><img src="images/p5-icon3.png" alt="">
+                                    <p>科技节</p>
+                                </div>
+                            </a>
+                            <a href="" class="item d4"><img class="bg" src="images/p5-pic4.png" alt="">
+                                <div class="iconbox"><img src="images/p5-icon4.png" alt="">
+                                    <p>外语节</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box-2"><img src="images/p5-pic5.jpg" alt="">
+                            <div class="head">
+                                <div class="title">校园 · 生活</div>
+                                <a class="more" href="">
+                                    <div class="img">
+                                        <img class="clock" src="images/clock3.png" alt="">
+                                        <img class="hoverclock" src="images/clock4.png" alt="">
+                                    </div>
+                                    <p>查看更多</p>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="box-3" href=""><img src="images/p5-pic6.png" alt=""></a>
+                        <div class="box-4">
+                            <a href="" class="item b1"><img class="bg" src="images/p5-pic7.png" alt="">
+                                <div class="iconbox"><img src="images/p5-icon5.png" alt="">
+                                    <p>校园风光</p>
+                                </div>
+                            </a>
+                            <a href="" class="item b2">
+                                <div class="iconbox"><img src="images/p5-icon6.png" alt="">
+                                    <p>校历</p>
+                                </div>
+                            </a>
+                            <a href="" class="item b3"><img class="bg" src="images/p5-pic8.png" alt="">
+                                <div class="iconbox"><img src="images/p5-icon7.png" alt="">
+                                    <p>集团活动</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="part-6" class="part-6">
+                    <div class="innerbox">
+                        <div class="left-box">
+                            <div class="box-1">
+                                <div class="title">招生 · 资讯</div>
+                                <a href="" class="more">
+                                    <p>查看更多</p>
+                                    <img src="images/p6-iocn1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="box-2">
+                                <div class="item">
+                                    <a href="">
+                                        <p>关于保送《深圳外国语学校2020届国内保送人员名单》</p>
+                                    </a>
+                                    <div class="i">2021-02-24
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>——————————————————————————————————————————————————————————————</i>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="">
+                                        <p>深圳外国学校2015届高考填报志愿会议通知</p>
+                                    </a>
+                                    <div class="i">2021-02-24
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>——————————————————————————————————————————————————————————————</i>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="">
+                                        <p>关于做好2020年基于高考基础上综合评价招生录取模式试点工作...</p>
+                                    </a>
+                                    <div class="i">2021-02-24
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>——————————————————————————————————————————————————————————————</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <div class="box-1">
+                                <div class="title">媒体 · 报道</div>
+                                <a href="" class="more">
+                                    <p>查看更多</p>
+                                    <img src="images/p6-iocn1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="box-2">
+                                <div class="item">
+                                    <div style="border-right: 1px solid #D9E7E0;">
+                                        <div class="box-l">深晚报道</div>
+                                    </div>
+                                    <a href="">
+                                        <p>深外校友科研成果登上国际顶尖学术期刊《Science》</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <div style="border-right: 1px solid #D9E7E0;">
+                                        <div class="box-l">深圳特区报</div>
+                                    </div>
+                                    <a href="">
+                                        <p>@深圳学生，读特·深圳名师云课堂在此！首期深外精品课上线啦</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <div style="border-right: 1px solid #D9E7E0;">
+                                        <div class="box-l">新浪网</div>
+                                    </div>
+                                    <a href="">
+                                        <p>今年开学！深外宝安分校确定落户沙井海岸城，暂借址上星学校</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="box-1">
+                        <div class="dock1">
+                            <div class="item"><a href="#">文理书院</a></div>
+                            <div class="item"><a href="#">国际书院</a></div>
+                            <div class="item"><a href="#">外语书院</a></div>
+                            <div class="item"><a href="#">创新书院</a></div>
+                            <div class="item"><a href="#">燕南学堂</a></div>
+                            <div class="item"><a href="page10.html">联系我们</a></div>
+                            <div class="item"><a href="#">网站地图</a></div>
+                            <div class="item wx">
+                                <div class="img">
+                                    <img src="images/wxIcon.png" alt="">
+                                    <div class="qrcode">
+                                        <img style="width: 120px;height: 120px;" src="images/wxqrcode.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="dock2">
+                            <div class="logo"><img src="images/schoolLogo.png" alt=""></div>
+                            <div class="others">
+                                <p>版权所有©深圳外国语学校</p><i>|</i>
+                                <p>地址：广东省深圳市红荔路2005号</p><i>|</i>
+                                <p>电话：0755-25652582</p><i>|</i>
+                                <p>反馈意见：sz5180183@136.com</p><i>|</i>
+                                <p>邮编：518000</p><i>|</i>
+                                <p>粤ICP号12014937号</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧滚动 -->
+        <div id="body-r">
+            <div id="back">
+                <img class="whiteIcon" src="images/backIcon.png" alt="">
+                <img class="blackIcon" src="images/backIconBlack.png" alt="">
+                <div id="P" class="p">首页</div>
+            </div>
+            <div class="rule">
+                <div class="ruleRed"><img src="images/blackRule.png" alt="">
+                    <div class="redButton1">
+                        <img src="images/redButton.png" alt="">
+                    </div>
+                    <div class="redButton3">
+                        <img src="images/redButton.png" alt="">
+                    </div>
+                    <div class="redButton4">
+                        <img src="images/redButton.png" alt="">
+                    </div>
+                </div>
+                <div class="ruleWhite"><img src="images/whiteRule.png" alt="">
+                    <div class="redButton1">
+                        <img src="images/redButton.png" alt="">
+                    </div>
+                    <div class="redButton3">
+                        <img src="images/redButton.png" alt="">
+                    </div>
+                    <div class="redButton4">
+                        <img src="images/redButton.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container-2 swiper-no-swiping">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="topic1">
+                            <div class="head">
+                                <div class="inner word">
+                                    <div class="title">关于 · 深外</div>
+                                    <div class="p">文明&nbsp;进取&nbsp;求实&nbsp;创新</div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="tr">
+                                    <div style="background:#637BA6;transition-delay: 0.9s;" class="td"></div>
+                                    <div style="background: #48638F;transition-delay: 0.7s;" class="td">
+                                        <strong><i>9</i><i>4</i><i>5</i></strong>保送留学生
+                                    </div>
+                                    <div style="background: #364F7F;transition-delay: 1.1s;" class="td">
+                                        <strong><i>8</i></strong>集团校部
+                                    </div>
+                                    <div style="background: #425A87;transition-delay: 1.4s;" class="td"></div>
+                                    <div style="background: #59719C;transition-delay: 1.1s;" class="td">
+                                        <strong><i>5</i><i>8</i><i>7</i></strong>集团教师
+                                    </div>
+                                    <div style="background: #3E5784;transition-delay: 0.8s;" class="td"></div>
+                                </div>
+                                <div class="tr">
+                                    <div style="background: #48638F;transition-delay: 0.6s;" class="td">
+                                        <strong><i>4</i><i>5</i><i>9</i><i>7</i><i>4</i></strong>全日制学生
+                                    </div>
+                                    <div style="background: #556D99;transition-delay: 1.4s;" class="td">
+                                        <strong><i>1</i><i>1</i><i>5</i><i>0</i></strong>考入清华学生
+                                    </div>
+                                    <div class="td infinite1" style="transition-delay: 1.1s;"></div>
+                                    <div style="background: #2C4675;transition-delay: 0.8s;" class="td">
+                                        <strong><i>1</i><i>5</i></strong>学校高考状元
+                                    </div>
+                                    <div style="background: #395485;transition-delay: 1s;" class="td"></div>
+                                    <div class="td infinite2" style="transition-delay: 0.6s;"></div>
+                                </div>
+                                <div class="tr">
+                                    <div style="transition-delay: 1.5s;" class="td infinite3"></div>
+                                    <div style="background: #637CA7;transition-delay: 1.2s;" class="td">
+                                        <strong><i>2</i><i>5</i></strong>优秀校友
+                                    </div>
+                                    <div style="background: #324D7C;transition-delay: 0.7s;" class="td">
+                                        <strong><i>1</i><i>5</i><i>7</i><i>8</i></strong>考入北大学生
+                                    </div>
+                                    <div style="transition-delay: 1.3s;" class="td infinite4"></div>
+                                    <div style="background: #59709C;transition-delay: 0.6s;" class="td">
+                                        <strong><i>3</i><i>5</i><i>7</i></strong>藏书(万册)
+                                    </div>
+                                    <div style="background: #2C4776;transition-delay: 1.3s;" class="td">
+                                        <strong><i>1</i><i>9</i><i>9</i><i>0</i></strong>深外创办学生
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div style="background:#637BA6;transition-delay: 1.3s;" class="td"></div>
+                                    <div style="background: #2F4878;transition-delay: 0.7s;" class="td"></div>
+                                    <div style="background: #435D8D;transition-delay: 0.9s;" class="td"></div>
+                                    <div style="transition-delay: 1.4s;" class="td infinite5"></div>
+                                    <div style="background: #425A86;transition-delay: 1s;" class="td"></div>
+                                    <div style="background: #385181;transition-delay: 0.5s;" class="td"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="historyDetail">
+                            <!-- 返回上页 -->
+                            <div class="navigation-his">
+                                <div class="left swiper-button-prev-son">
+                                    <img class="swiper-button-prev-son img1" src="images/l-blackArrow.png" alt="">
+                                    <img class="swiper-button-prev-son img2" src="images/l-whiteArrow.png" alt="">
+                                </div>
+                                <div id="backToHis" class="text">返回</div>
+                                <div class="right swiper-button-next-son">
+                                    <img class="swiper-button-next-son img1" src="images/r-blackArrow.png" alt="">
+                                    <img class="swiper-button-next-son img2" src="images/r-whiteArrow.png" alt="">
+                                </div>
+                            </div>
+                            <div class="head">
+                                <div class="inner">
+                                    <div class="title">建校 <i style="color: red;">·</i> 成立</div>
+                                    <img style="margin-top: 23px;" src="images/his-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-container-3" id="swiperSon">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his1-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">创建深圳外国语学校</div>
+                                                        <p>在深圳市委、市政府和市教委的重视和关怀下，在深圳中学的大力支
+                                                            持下，龚国祥校长带领4名教师、51名学生，在从深圳中学借用的4
+                                                            间教室中的一间教室里举办了第一次升旗仪式和开学典礼：在墙上挂
+                                                            一面国旗，全体师生面向国旗高唱国歌，龚国祥校长进行国旗下第一
+                                                            次讲话。深外正式开办。从此，深外开启了不断走向辉煌的征程。</p>
+                                                        <div class="date">
+                                                            <p>1990</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his1-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">定址燕南路</div>
+                                                        <p>市政府确定原市建筑工程学校为深圳外国语学校校址；8月，学校正
+                                                            式搬迁至燕南路（现燕南校区）。</p>
+                                                        <div class="date">
+                                                            <p>1991</p>
+                                                            <i>03</i>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his1-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">首届深外学子初一1班合影</div>
+                                                        <p>首届深外的初一1班学生在新校区合影留念</p>
+                                                        <div class="date">
+                                                            <p>1991</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his1-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="text">
+                                                            <div class="i">首届高中生毕业典礼上致辞</div>
+                                                            <p>首届高三学生毕业，当年高考升学率达100%，15%毕业生通过保送
+                                                                被高校录取。从此，我校高考升学率一直保持100%；保送高校的人
+                                                                数逐年增加，现已稳居广东省第一、全国前列。</p>
+                                                            <div class="date">
+                                                                <p>1994</p>
+                                                                <i>02</i>
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his1-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">第五届外语艺术节</div>
+                                                        <p>学校在燕南校区校园内举行建校五周年庆典。深圳市委常委、市委秘
+                                                            书长林祖基，市教育局局长廖槎武等领导出席庆典。廖槎武代表教育
+                                                            局致辞。</p>
+                                                        <div class="date">
+                                                            <p>1995</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-2-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">成立首个市级中学生社团SYEC</div>
+                                                        <p>学校牵头成立深圳市第一个跨校的全市性中学生社团——深圳青少年
+                                                            英语俱乐部。</p>
+                                                        <div class="date">
+                                                            <p>1996</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-2-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">首届科技节</div>
+                                                        <p>5月22日，学校举办首届科技节。</p>
+                                                        <div class="date">
+                                                            <p>1997</p>
+                                                            <i>05</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-2-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">广东省一级学校揭牌暨刘宇新奖教奖学基金颁奖大会</div>
+                                                        <p>广东省一级学校揭牌暨刘宇新奖教奖学基金颁奖大会</p>
+                                                        <div class="date">
+                                                            <p>1998</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-2-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">我校王婷同学获英语口语决赛第一名</div>
+                                                        <p>在“全国中学生英语口语比赛”中，我校王婷同学拿下了份量最重的
+                                                            名次，获决赛第一名。这是我校学生在参加国家级比赛中首次获得大
+                                                            奖，开启了此后深外学子在国家级比赛中屡获大奖的记录</p>
+                                                        <div class="date">
+                                                            <p>1999</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-2-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深外东海附属小学成立</div>
+                                                        <p>为满足市民对优质学校、优质学位的需求，按照教育部有关“名校办
+                                                            民校”的精神，学校在市教育局的支持下，积极进行办学新体制的探
+                                                            索，与东海集团合作，创办“深圳外国语学校东海附属小学”。附小
+                                                            于9月1日正式开学。</p>
+                                                        <div class="date">
+                                                            <p>2000</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-3-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">十周年校庆</div>
+                                                        <p>深圳外国语学校十周年校庆如期举行</p>
+                                                        <div class="date">
+                                                            <p>2000</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-3-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">高中部奠基仪式</div>
+                                                        <p>3月28日，举行高中部新校址奠基仪式。</p>
+                                                        <div class="date">
+                                                            <p>2001</p>
+                                                            <i>03</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-3-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">创办深圳外国语学校龙岗分校</div>
+                                                        <p>创办深圳外国语学校龙岗分校</p>
+                                                        <div class="date">
+                                                            <p>2002</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-3-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">王雪菲获全国日语口语竞赛一等奖</div>
+                                                        <p>王雪菲同学在全国中学生日语演讲比赛以及在日本举行的国际日本语
+                                                            演讲大赛中荣获第一名。</p>
+                                                        <div class="date">
+                                                            <p>2002</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-3-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">东海附属小学毕业典礼</div>
+                                                        <p>2003-深圳外国语学校东海附属小学首届毕业典礼在深圳外国语学校
+                                                            初中部举行，93名毕业生光荣毕业</p>
+                                                        <div class="date">
+                                                            <p>2003</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-4-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">高中部封顶仪式</div>
+                                                        <p>深圳外国语盐田校区高中部举行封顶仪式。</p>
+                                                        <div class="date">
+                                                            <p>2003</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-4-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">高中部盐田校区竣工，高中部整体搬迁至盐田新校区</div>
+                                                        <p>高中部盐田校区于9月份竣工，高中部整体搬迁至盐田新校区，初、
+                                                            高中实现分点办学。高中部办学规模大幅扩展，高一年级首次由10
+                                                            个班扩招至20个教学班。</p>
+                                                        <div class="date">
+                                                            <p>2003</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-4-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">广东省高考理科状元谢博</div>
+                                                        <p>谢博同学夺得广东省高考物理类总分状元。</p>
+                                                        <div class="date">
+                                                            <p>2004</p>
+                                                            <i>06</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-4-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">中考状元陈慧怡</div>
+                                                        <p>陈慧怡同学夺得深圳市中考状元。</p>
+                                                        <div class="date">
+                                                            <p>2004</p>
+                                                            <i>06</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-4-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">建校十五周年庆典</div>
+                                                        <p>深圳外国语学校举行建校15周年庆祝活动</p>
+                                                        <div class="date">
+                                                            <p>2005</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-5-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">加拿大多伦多大学与我校签约，开通绿色通道</div>
+                                                        <p>学校于9月22日与加拿大多伦多大学（University of Toronto）签署
+                                                            “绿色通道”（Green Path）合作协议，深外学子可直升这所世界
+                                                            顶尖名校。</p>
+                                                        <div class="date">
+                                                            <p>2006</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-5-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">政治总分状元肖菲和理科总分状元李迪心同学</div>
+                                                        <p>届高考省政治总分状元肖菲和深圳市理科总分状元李迪心同学</p>
+                                                        <div class="date">
+                                                            <p>2007</p>
+                                                            <i>07</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-5-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">广东省国家级示范性高中揭牌</div>
+                                                        <p>高中部被省教育厅正式授予“广东省国家级示范性普通高中”及“广
+                                                            东省普通高中教学水平优秀学校”称号。</p>
+                                                        <div class="date">
+                                                            <p>2008</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-5-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">我校第六语种——俄语开设仪式</div>
+                                                        <p>10月9日，学校举行俄语语种开设仪式，由主席维克托·萨佐诺夫
+                                                            （ВикторСазонов）率领的俄罗斯萨马拉州杜马代表团一行、俄罗
+                                                            斯驻广州总领事及深圳市人大常委会副主任唐杰出席仪式。俄语是学
+                                                            校开设的第六个外语语种。</p>
+                                                        <div class="date">
+                                                            <p>2008</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-5-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">新老校长交接</div>
+                                                        <p>2月9日，学校举行新老校长交接仪式，学校创始人龚国祥校长卸任，
+                                                            汤佳宏同志继任校长。深圳市委副书记李意珍、深圳市副市长闫小培、
+                                                            深圳市教育局局长张宝泉出席了交接仪式。</p>
+                                                        <div class="date">
+                                                            <p>2009</p>
+                                                            <i>02</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-6-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">汤佳宏校长与广东省理科状元刘若旖</div>
+                                                        <p>刘若旖同学夺得“广东省理科总分第一名”和“广东省物理类总分第
+                                                            一名”，即夺得广东省高考双料状元。</p>
+                                                        <div class="date">
+                                                            <p>2009</p>
+                                                            <i>06</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-6-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">高中部体育馆落成</div>
+                                                        <p>深圳外国语学校高中部的体育馆如期落成</p>
+                                                        <div class="date">
+                                                            <p>2009</p>
+                                                            <i>11</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-6-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">二十周年校庆</div>
+                                                        <p>12月2日，学校在高中部体育馆举行建校二十周年庆典，广东省委常
+                                                            委、深圳市委书记王荣发来贺信并高度评价我校：“创造了自身发展
+                                                            的奇迹，成为深圳教育强市的一张闪亮的名片。”市政协主席白天、
+                                                            市委副书记王穗明、市人大常委会副主任周光明、副市长吴以环、市
+                                                            教育局局长郭雨蓉等领导，以及中外数百名校长、来自世界各地的校
+                                                            友等上千名来宾出席了庆典。王穗明代表市委、市政府致辞。</p>
+                                                        <div class="date">
+                                                            <p>2010</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-6-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">国际部奠基</div>
+                                                        <p>4月29日，学校举行国际部奠基仪式，国际部正式开工建设。国际部
+                                                            是由深圳市政府投资兴建、面向在深圳工作的外籍和港澳台人士子女
+                                                            的第一所国际学校。</p>
+                                                        <div class="date">
+                                                            <p>2010</p>
+                                                            <i>04</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-6-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深外校友总会成立</div>
+                                                        <p>深圳外国语学校校友总会成立</p>
+                                                        <div class="date">
+                                                            <p>2010</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-7-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">学校承办中外名校长论坛</div>
+                                                        <p>12月1日，学校与盐田区教育局共同承办的深圳市首次“中外名校长
+                                                            论坛”取得圆满成功。中外名校长论坛由教育部中学校长培训中心、
+                                                            深圳市教育局主办。来自美国、英国、澳大利亚、挪威等国的40多名
+                                                            专家、校长，以及国内的230名知名中学校长汇聚深圳，就“中学办
+                                                            学特色研究”进行热烈探讨。</p>
+                                                        <div class="date">
+                                                            <p>2009</p>
+                                                            <i>06</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-7-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">与日本立命馆大学签订合作协议</div>
+                                                        <p>与日本立命馆大学签订合作协议，深外学子今后可直升该所日本顶尖
+                                                            名校</p>
+                                                        <div class="date">
+                                                            <p>2009</p>
+                                                            <i>11</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-7-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">国际生态学校揭牌活动</div>
+                                                        <p>国际生态学校揭牌活动(我校是全国首批“国际生态学校”)</p>
+                                                        <div class="date">
+                                                            <p>2010</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-7-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">高中部体育馆圆满完成</div>
+                                                        <p>高中部体育馆圆满完成第26届世界大学生运动会篮球比赛任务</p>
+                                                        <div class="date">
+                                                            <p>2011</p>
+                                                            <i>01</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-7-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">获评全国文明单位</div>
+                                                        <p>学校获评“全国文明单位”。</p>
+                                                        <div class="date">
+                                                            <p>2010</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-8-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深外国际部部分建成，举办开学典礼</div>
+                                                        <p>深圳首个政府投资的国际学校——深圳外国语学校国际部部分建成，
+                                                            幼儿园开学。副市长吴以环、市教育局局长郭雨蓉等领导出席开学典
+                                                            礼。</p>
+                                                        <div class="date">
+                                                            <p>2011</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-8-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">学校成为清华大学首批“新百年领军计划”推荐中学</div>
+                                                        <p>深圳首个政府投资的国际学校——深圳外国语学校国际部部分建成，
+                                                            幼儿园开学。副市长吴以环、市教育局局长郭雨蓉等领导出席开学典
+                                                            礼。</p>
+                                                        <div class="date">
+                                                            <p>2009</p>
+                                                            <i>11</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-8-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">广东省教育厅正式发文批准我校开办“国际课程中心”</div>
+                                                        <p>广东省教育厅正式发文批准我校开办“国际课程中心”。迄今为止，
+                                                            我校是广东省唯一一所通过广东省教育厅批准开办国际课程中心的公
+                                                            办学校。</p>
+                                                        <div class="date">
+                                                            <p>2010</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-8-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">诸康妮、李兆隆获得全国中学生英语演讲冠军</div>
+                                                        <p>诸康妮、李兆隆两位同学分别获得“21世纪杯”全国中学生英语演讲
+                                                            比赛高中组、初中组总冠军</p>
+                                                        <div class="date">
+                                                            <p>2011</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-8-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳首个政府投资的国际学校 (深外国际部)全面落成</div>
+                                                        <p>4月24日，深圳首个政府投资的国际学校——深圳外国语学校国际部
+                                                            全面落成，8月27日，国际部幼儿园、小学和初中全面开学，共招收
+                                                            460名学生。</p>
+                                                        <div class="date">
+                                                            <p>2012</p>
+                                                            <i>04</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-9-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">原外交部李肇星部长莅临我校并与学生亲切交流</div>
+                                                        <p>前外交部长李肇星先生做客深外并与我校学生老师亲切交流</p>
+                                                        <div class="date">
+                                                            <p>2012</p>
+                                                            <i>05</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-9-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">学校承办外交学院全国中学生模拟联合国大会</div>
+                                                        <p>学校承办外交学院全国中学生模拟联合国大会，并成为此项活动的永
+                                                            久承办方。</p>
+                                                        <div class="date">
+                                                            <p>2012</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-9-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">获北京大学“校长实名推荐”资格,同时清华大学“新
+                                                            百年领军计划”推荐名额增至2名</div>
+                                                        <p>学校首次获北京大学“校长实名推荐”资格；同时清华大学“新百年
+                                                            领军计划”推荐名额增至2名，我校成为广东省唯一获得增加名额殊
+                                                            荣的学校。经过学校考评、专家面试，许思佳同学、廖颖同学获得清
+                                                            华大学的推荐资格，鹿雨适同学获得北京大学的推荐资格。</p>
+                                                        <div class="date">
+                                                            <p>2013</p>
+                                                            <i>11</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-9-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">学校承办“第31届全国青少年信息学奥林匹克竞赛”</div>
+                                                        <p>学校承办“第31届全国青少年信息学奥林匹克竞赛”。来自全国30个
+                                                            省、市、自治区的400余名师生参加了竞赛，赛事活动得到了市政府
+                                                            的高度重视和大力支持，吴以环副市长参加开幕式并致辞，对赛事活
+                                                            动的意义给予了充分肯定，同时对参赛选手表达了殷切祝福和热切期
+                                                            盼。竞赛活动取得了圆满成功。</p>
+                                                        <div class="date">
+                                                            <p>2014</p>
+                                                            <i>07</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-9-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">加拿大滑铁卢大学“绿色通道”开通</div>
+                                                        <p>3月11日，学校与加拿大滑铁卢大学（Universityof Waterloo）签订
+                                                            合作协议，标志着学校在加拿大的第二条“绿色通道”开通。</p>
+                                                        <div class="date">
+                                                            <p>2014</p>
+                                                            <i>03</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-10-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">国兵走进校园</div>
+                                                        <p>中国国家乒乓球队总教练、男队主教练刘国梁率中国乒乓球男队访问
+                                                            我校。开展主题为“奋斗的青春最美丽——国乒走进校园共促阳光体
+                                                            育”的互动交流活动。这也是共青团中央、体育总局乒羽管理中心开
+                                                            展的同名主题活动第一次真正走入中学校园的创新活动。奥运冠军、
+                                                            共青团中央宣传文体处处长王楠等出席了本次活动。</p>
+                                                        <div class="date">
+                                                            <p>2014</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-10-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">二十五周年校庆</div>
+                                                        <p>12月3日，学校在初中部举行建校二十五周年庆典活动，副市长吴以
+                                                            环以及市教育局郭雨蓉局长率全体局领导出席庆典。吴以环、郭雨蓉
+                                                            分别致辞。</p>
+                                                        <div class="date">
+                                                            <p>2015</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-10-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">初中部校园改造工程历时两年顺利完成，校园焕然一新</div>
+                                                        <p>学校首次获北京大学“校长实名推荐”资格；同时清华大学“新百年
+                                                            领军计划”推荐名额增至2名，我校成为广东省唯一获得增加名额殊
+                                                            荣的学校。经过学校考评、专家面试，许思佳同学、廖颖同学获得清
+                                                            华大学的推荐资格，鹿雨适同学获得北京大学的推荐资格。</p>
+                                                        <div class="date">
+                                                            <p>2015</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-10-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">学校与龙华新区管委会就共建深圳外国语学校龙华校
+                                                            区签订协议</div>
+                                                        <p>学校与龙华新区公共事业局就共建深圳外国语学校龙华校区签订协议。
+                                                            姜建军、郭雨蓉、王立新、范坤、丘孟军、骆秋雄、汤佳宏等领导出
+                                                            席共建深圳外国语学校龙华校区签约仪式</p>
+                                                        <div class="date">
+                                                            <p>2015</p>
+                                                            <i>03</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-10-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">话剧《四世同堂》在大剧院演出</div>
+                                                        <p>学生自导自演话剧《四世同堂》在大剧院演出</p>
+                                                        <div class="date">
+                                                            <p>2015</p>
+                                                            <i>04</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-11-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳外国语学校（龙华）高中部筹建</div>
+                                                        <p>为发挥名校的引领和辐射作用，扩大优质教育资源，推进优质教育均
+                                                            衡化、普及化，更好地满足广大市民对优质教育的需求，市教育局颁
+                                                            发了深教〔2016〕112号文，决定由深圳外国语学校负责深圳市第八
+                                                            高级中学的筹建，“八高”将作为深圳外国语学校教育集团的重要组
+                                                            成部分，命名为：深圳外国语学校龙华高中部。</p>
+                                                        <div class="date">
+                                                            <p>2016</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-11-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">筹建“深圳外国语学校（龙岗）国际部”</div>
+                                                        <p>随着深圳城市国际化水平的提升，在深圳的外籍和港澳台人士不断增
+                                                            多，为满足他们的子女教育问题，深圳市人民政府办公厅同意，市教
+                                                            育局牵头，我校筹建“深圳外国语学校龙岗国际部”，英文名称：
+                                                            “International Division of Shenzhen ForeignLanguages School
+                                                             (Longgang)”。选址深圳市龙岗区坂田街道落坑片区，并在深圳科
+                                                            学高中设立过渡校区。学制从小学一年级至十二年级的国际教育。</p>
+                                                        <div class="date">
+                                                            <p>2016</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-11-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">南科大“创新人才联合培养基地”签约仪式</div>
+                                                        <p>4月14日下午，深圳外国语学校与南方科技大学“创新人才联合培养
+                                                            基地”签约仪式暨座谈会在我校举行，我校汤佳宏校长与南科大校长
+                                                            陈十一代表双方签署“创新人才联合培养基地”共建协议并授牌。陈
+                                                            十一校长发表了主题讲话，并与我校部分学生座谈。</p>
+                                                        <div class="date">
+                                                            <p>2016</p>
+                                                            <i>04</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-11-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">李振同学2016年中国数学奥林匹克荣获全国一等奖</div>
+                                                        <p>我校李振同学作为广东省队队员参加2016年中国数学奥林匹克（第
+                                                            32届全国中学生数学冬令营）荣获全国一等奖（冬令营金牌）</p>
+                                                        <div class="date">
+                                                            <p>2016</p>
+                                                            <i>03</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-11-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">我校iGEM团队荣获国际遗传工程机器大赛金奖</div>
+                                                        <p>在美国马萨诸塞州波士顿海因斯会议中心举行的IGEM（“国际遗传工
+                                                            程机器大赛”）中，我校IGEM团队荣获国际遗传工程机器大赛（英文
+                                                            全称为International Genetically EngineeredMachine 
+                                                            Competition）金奖。IGEM是麻省理工学院于2003年创办，2005年
+                                                            发展成为国际性学术竞赛，是合成生物学领域的顶级国际性学术竞赛。
+                                                            在300多支参赛队中，我校IGEM团队是深圳高中参赛团队中唯一获奖
+                                                            团队。</p>
+                                                        <div class="date">
+                                                            <p>2016</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-12-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">汤佳宏校长退休，罗来金校长继任第三任校长</div>
+                                                        <p>11月9日，市教育局在我校召开教职工大会，举行新老校长交接仪式，
+                                                            第二任校长汤佳宏到龄退休卸任校长，罗来金同志继任第三任校长。
+                                                            市委教育工委副书记范坤出席会议并讲话。范坤副书记代表教育局对
+                                                            汤佳宏任校长期间的成绩给予了高度的评价和充分的肯定；希望深外
+                                                            在罗来金同志带领下继续自觉承担起领跑、示范、引领的作用，努力
+                                                            办成一所在国内外具有广泛影响力的一流学校。</p>
+                                                        <div class="date">
+                                                            <p>2017</p>
+                                                            <i>11</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-12-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳外国语学校（龙岗）国际部正式揭牌开门纳新</div>
+                                                        <p>9月1日，在深圳市委、市政府和市教育局的重视和关怀下，在深圳市
+                                                            科学高中的大力支持下，深圳外国语学校龙岗国际部在过渡校区（深
+                                                            圳市科学高中）迎来了首批学生。市委教育工委副书记范坤、龙岗区
+                                                            教育局督导室主任袁学锋、深圳外国语学校校长汤佳宏，深圳外国语
+                                                            学校龙岗国际部校长刘佳等为学校揭牌，并参加了开学典礼。范坤副
+                                                            书记并致辞。</p>
+                                                        <div class="date">
+                                                            <p>2017</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-12-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">诺贝尔化学奖获得者巴瑞·夏普莱斯来到深外高中部</div>
+                                                        <p>12月8日，世界级顶尖科学家、化学泰斗、2001年诺贝尔化学奖获得
+                                                            者巴瑞·夏普莱斯教授，来到我校高中部为师生开设讲座。这是首次有
+                                                            诺奖级专家来深外讲学，据悉，也是诺奖得主首次进入深圳市的中学
+                                                            开设学术讲座。</p>
+                                                        <div class="date">
+                                                            <p>2017</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-12-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深外南山国际部喜获CIS和WASC的认证</div>
+                                                        <p>7月，深外国际部喜获CIS（国际学校委员会）和WASC（美国西部院
+                                                            校联盟）的认证，成为深圳第一所同时获得两大机构认证的学校。9
+                                                            月28日，CIS学校服务与评审官员Helena Sobulis女士将授权牌匾颁
+                                                            发给深外国际部理事长龚国祥和校长邬晓莉，标志着我校国际部发展
+                                                            开启新的篇章。</p>
+                                                        <div class="date">
+                                                            <p>2017</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-12-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深外FRC校队勇夺全明星新秀奖”</div>
+                                                        <p>3月，深外FRC（中学生机器人对战赛）校队 VOYAGER #6414｜
+                                                            Shenzhen Foreign勇夺2017年美国匹兹堡赛区唯一一个FRC“全明
+                                                            星新秀奖”，并获参加总决赛资格。</p>
+                                                        <div class="date">
+                                                            <p>2017</p>
+                                                            <i>03</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-13-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">设立创新书院、外语书院、国际书院、文理书院</div>
+                                                        <p>深外宏扬书院传统，创新人才培养模式，高中部在原有创新人才培养
+                                                            模式“梧桐书院”的基础上，设立创新书院、外语书院、国际书院、
+                                                            文理书院“四大书院”，因材施教，为学生终身</p>
+                                                        <div class="date">
+                                                            <p>2018</p>
+                                                            <i>06</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-13-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳外国语学校龙华学校正式开办</div>
+                                                        <p>9月3日，深圳外国语学校龙华学校正式开办，副校长李武出任龙华学
+                                                            校校长。学校形成“一校七部”的办学规模，助力特区教育的均衡化、
+                                                            优质化发展。校长李武和龙华区教育局局长王玉玺等领导共同开启新
+                                                            校启动仪式，王玉玺局长、李武校长分别致辞。</p>
+                                                        <div class="date">
+                                                            <p>2018</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-13-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">我校承办的“少年智慧，共创湾区”为主题的2018年
+                                                            深圳市国际中学生论坛</div>
+                                                        <p>11月22日，由深圳市教育局主办，我校承办的“少年智慧，共创湾
+                                                            区”为主题的2018年深圳市国际中学生论坛在我校（龙华）高中部
+                                                            开幕。市教育局副局长赵立等领导出席了会议，来自粤港澳大湾区
+                                                            主要城市13所学校的40名中学生汇聚一堂，代表湾区各城市用全英
+                                                            文纵论粤港澳大湾区本土文化资源的教育合作和红树林的合作开发
+                                                            建设议题，并在一天的会期里达成共识，发布联合宣言。</p>
+                                                        <div class="date">
+                                                            <p>2018</p>
+                                                            <i>11</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-13-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">全美经济学中国挑战赛,我校两队选手分列全国二三名</div>
+                                                        <p>3月16日，在2018年上海举行的NEC全美经济学中国挑战赛决赛中，
+                                                            我校高中部冯睿宁、邹敬鸿、陈欣怡、曾相睿组成的DRO27小组团
+                                                            队总分全国第二；麦凡千、罗智浩、石璐彰、陆露组成的DRO45小
+                                                            组团队总分全国第三，这两支队伍也获得代表中国赴美参加全球总
+                                                            决赛资格。</p>
+                                                        <div class="date">
+                                                            <p>2018</p>
+                                                            <i>01</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-13-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">年世界中学生运动会上，由我校组建的中国中学生击 剑队参加击剑项目比赛，摘得一金四铜，三个前八名</div>
+                                                        <p>在摩洛哥马拉喀什举行的2018年世界中学生运动会上，由我校组建
+                                                            的中国中学生击剑队参加击剑项目比赛，摘得一金四铜，三个前八名。
+                                                            其中，我校击剑队7名队员夺得一金三铜，为中国队立下汗马功劳。</p>
+                                                        <div class="date">
+                                                            <p>2018</p>
+                                                            <i>05</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-14-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">在美国USAP五项全能比赛中，我校学团体总分银牌</div>
+                                                        <p>深外宏扬书院传统，创新人才培养模式，高中部在原有创新人才培养
+                                                            模式“梧桐书院”的基础上，设立创新书院、外语书院、国际书院、
+                                                            文理书院“四大书院”，因材施教，为学生终身。</p>
+                                                        <div class="date">
+                                                            <p>2018</p>
+                                                            <i>06</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-14-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">刘涵宇获第27届全国中学生生物学奥林匹克金牌</div>
+                                                        <p>高三学子刘涵宇同学获第27届全国中学生生物学奥林匹克竞赛金牌，
+                                                            入选国家集训队，并获北京大学元培学院预录取。</p>
+                                                        <div class="date">
+                                                            <p>2018</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-14-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳外国语小学</div>
+                                                        <p>深圳外国语学校东海附属小学”自2019年4月17日起正式更名为“深
+                                                            圳外国语小学”</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>04</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-14-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳外国语学校新校区落户宝安</div>
+                                                        <p>8月16日，在深圳市副市长王立新、宝安区委书记姚任、区长郭子平
+                                                            等领导的见证下，宝安区教育局局长范燕塔与我校校长罗来金签署了
+                                                            委托管理办学框架协议，深圳外国语学校新校区落户宝安。深圳外国
+                                                            语学校宝安学校按九年一贯制学校建设。</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>08</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-14-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">蔡子熙同学连续三次夺得数学奥林匹克金牌</div>
+                                                        <p>蔡子熙同学连续三年进入中国数学奥林匹克竞赛，三次夺得金牌，第
+                                                            二次入选国家集训队。</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-15-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">我校图书馆获评2019最美校园图书馆</div>
+                                                        <p>深圳外国语学校图书馆获评2019年度最美校园图书馆</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-15-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">第六届广东省中小学生艺术展演舞蹈类第二名《叶
+                                                            的向往》</div>
+                                                        <p>3月27日，第六届广东省中小学生艺术展演中，我校舞蹈团凭借原创
+                                                            作品《叶的向往》获得舞蹈类比赛广东省第二名（省一等奖）。</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-15-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">第六届广东省中小学生艺术展演第一名《保送》</div>
+                                                        <p>邀参加2019央视春晚深圳分会场等大型活动的演出；中文戏剧团小品
+                                                            《保送》获得一等奖第一名。</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>04</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-15-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">第六届广东省中小学艺术展声乐类一等奖《心的启航》</div>
+                                                        <p>第六届广东省中小学生艺术展演中，我校舞蹈团凭借原创心航合唱团
+                                                            的《Lamentatioins ofjeremiah、心的启航》获得一等奖。</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>08</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-15-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">市委领导一行来到我校初中部查看</div>
+                                                        <p>市委领导一行来到我校初中部查看，听取罗来金校长学校对开学准备
+                                                            工作的汇报。王伟中、陈如桂察看了初、高中线上巡课以及教学情况。</p>
+                                                        <div class="date">
+                                                            <p>2019</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-16-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">学校获评“深圳市在线教学先进学校”荣誉称号</div>
+                                                        <p>深圳外国语学校获评“深圳市在线教学先进学校”荣誉称号</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-16-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">屏蔽生马飞扬</div>
+                                                        <p>屏蔽生马飞扬，深外成为广东省屈指可数的年年有屏蔽生的学校之一</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-16-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">罗来金校长荣获深圳市“教书育人模范”荣誉称号</div>
+                                                        <p>9月10日，“深圳市庆祝第36个教师节大会”在深圳会堂召开。会上，
+                                                            隆重表彰了一批教育工作先进个人。罗来金校长荣获深圳市“教书育
+                                                            人模范”荣誉称号，并作为代表发言。</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-16-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳外国语学校（龙岗）国际部正式更名为“深圳外
+                                                            国语湾区学校”</div>
+                                                        <p>6月18日，聂新平副市长主持召开深圳市政府办公会议，听取市教育
+                                                            局、深圳外国语学校关于深圳外国语湾区学校办学方案情况汇报，以
+                                                            及各参会单位意见和建议，对湾区学校办学事宜作了研究和部署。会
+                                                            议决定：原则同意“深圳外国语学校（龙岗）国际部”更名为“深圳
+                                                            外国语学校湾区学校”。</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>06</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-16-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">宝安学校开办，首届招收小学一年级、初中一年学生</div>
+                                                        <p>我校宝安学校首届招收小学一年级、初中一年学生，因学校校舍尚未
+                                                            完工，暂借址宝安区上星学校办学。8月30日谢志光校长及老师代表
+                                                            在上星学校举行新校启动仪式。</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-17-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">地铁八号线开通，“深外高中”站</div>
+                                                        <p>地铁八号线开通，“深外高中”站成为深圳首个以中学命名的地铁站</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-17-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">20届全国中学生生物竞赛选手张咏妍、汪博伟获得
+                                                            两枚金牌</div>
+                                                        <p>10月8日，在第29届全国中学生生物学竞赛中，我校生物竞赛选手张
+                                                            咏妍、汪博伟秉承“更高、更快、更强”的奥林匹克精神，不畏艰难，
+                                                            沉着冷静，奋力拼搏，获得两枚金牌，我校成为广东省获得金牌数量
+                                                            最多的学校（广东省总共四枚金牌）。</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-17-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">老校长龚国祥获评“深圳经济特区40年40位创新创业
+                                                            人物和先进模范人物”称号</div>
+                                                        <p>老校长龚国祥获评“深圳经济特区40年40位创新创业人物和先进模范
+                                                            人物”称号。10月14日，习近平总书记出席深圳经济特区建立40周年
+                                                            庆祝大会并发表重要讲话。老校长作为深圳特区40年40位杰出人物之
+                                                            一受到习总书记的亲切接见，并与习总书记等中央和省市领导人合影
+                                                            留念。这是给老校长的荣誉礼赞，也是属于全体深外人荣誉。</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-17-4.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">学校获评“全国文明校园”</div>
+                                                        <p>深圳外国语学校获评“全国文明校园”。</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-17-5.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深外三十 再出发</div>
+                                                        <p>深圳外国语学校三十周年校庆举行</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-18-1.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">深圳外国语学校（集团）成立</div>
+                                                        <p>深圳外国语学校（集团）成立,一校八部</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>12</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-18-2.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">我校党委获表彰称号“深圳市抗疫先进集体”</div>
+                                                        <p>深圳外国语学校党委获表彰称号“深圳市抗疫先进集体”</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>···</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/his2-18-3.png" alt="">
+                                                    <div class="text">
+                                                        <div class="i">小学部二十华诞</div>
+                                                        <p>深圳外国语小学开展庆祝二十周年华诞活动</p>
+                                                        <div class="date">
+                                                            <p>2020</p>
+                                                            <i>10</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="box">
+                                                    <img src="images/updating.png" alt="">
+                                                    <!-- <div class="text">
+                                                        <div class="i">创建深圳外国语学校</div>
+                                                        <p>在深圳市委、市政府和市教委的重视和关怀下，在深圳中学的大力支
+                                                            持下，龚国祥校长带领4名教师、51名学生，在从深圳中学借用的4
+                                                            间教室中的一间教室里举办了第一次升旗仪式和开学典礼：在墙上挂
+                                                            一面国旗，全体师生面向国旗高唱国歌，龚国祥校长进行国旗下第一
+                                                            次讲话。深外正式开办。从此，深外开启了不断走向辉煌的征程。</p>
+                                                        <div class="date">
+                                                            <p>1990</p>
+                                                            <i>09</i>
+                                                        </div>
+                                                    </div> -->
+
+                                                </div>
+                                            </div>
+                                            <div class="item">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="menu">
+                                <div class="box swiper-pagination">
+                                    <div class="item"><i style="font-size: 30px;">·</i> 1990~1995</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 1996~2000</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2000~2003</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2003~2005</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2006~2009</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2009~2010</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2010~2011</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2011~2012</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2012~2014</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2014~2015</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2016</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2017</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2018</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2018~2019</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2019~2020</div>
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2020（1）</div>                            
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2020（2）</div>                                 
+                                    <div class="item"><i style="font-size: 30px;">·</i> 2020（3）</div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div id="topic3">
+                            <div class="head">
+                                <div class="inner word">
+                                    <div class="title">深外 · 史苑</div>
+                                    <div class="p">深外建校三十(一九九零至二零二零)年大事记</div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="textbox">
+                                    <p>南海潮头又春风，双区驱动再扬帆</p>
+                                    <p>值此三十华诞，自当检视既往</p>
+                                    <p>擘划将来，承前启后，砥砺图强</p>
+                                    <p>以期不负始创之初心、市民之重托也</p>
+                                    <p>今编《深圳外国语三十周年大事记》</p>
+                                    <p>回眸学校三十载风雨历程</p>
+                                    <p>笃志教育、青蓝相继</p>
+                                    <p>已尽美矣；弦歌不断</p>
+                                    <p>续写华章，犹未尽善矣</p>
+                                    <p>当以振奋之精神</p>
+                                </div>
+                                <div class="imgbox">
+                                    <div class="bigone">
+                                        <img src="images/topic3-1.png" alt="">
+                                        <img class="littleone" src="images/topic3-2.png" alt="">
+                                    </div>
+                                    <div id="history" class="title">
+                                        <div class="img">
+                                            <img class="clock" src="images/clock.png" alt="">
+                                            <img class="hoverclock" src="images/clock2.png" alt="">
+                                        </div>
+                                        <div style="margin-left: 10px;" class="p">了解更多深外史苑</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="topic4">
+                            <div class="head">
+                                <div class="inner word">
+                                    <div class="title">深外 · 馆藏</div>
+                                    <div class="p">高标准、有特色、现代化，办国内外一流名校</div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="tr">
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 1;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 1;" class="td"></div>
+                                </div>
+                                <div class="tr">
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0.8;" class="td">图书馆</div>
+                                    <div style="background:#225732;opacity: 1;" class="td">恒温游泳馆</div>
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0;" class="td">美术馆</div>
+                                </div>
+                                <div class="tr">
+                                    <div style="background:#225732;opacity: 1;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0;" class="td">创客室</div>
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                </div>
+                                <div class="tr">
+                                    <div style="background:#225732;opacity: 0.1;" class="td">大剧院</div>
+                                    <div style="background:#225732;opacity: 0.7;" class="td">体育馆</div>
+                                    <div style="background:#225732;opacity: 0;" class="td"></div>
+                                    <div style="background:#225732;opacity: 0;" class="td">未来教室</div>
+                                    <div style="background:#225732;opacity: 1;" class="td"></div>
+                                </div>
+                                <div class="img1box"><img class="img1" src="images/topic4-2.png" alt=""></div>
+                                <div class="img2box"><img class="img2" src="images/topic4-3.png" alt=""></div>
+                                <div class="img3box"><img class="img3" src="images/topic4-4.png" alt=""></div>
+                                <div class="img4box"><img class="img4" src="images/topic4-5.png" alt=""></div>
+                                <div class="img5box"><img class="img5" src="images/topic4-6.png" alt=""></div>
+                                <div class="img6box"><img class="img6" src="images/topic4-7.png" alt=""></div>
+                                <div class="img7box"><img class="img7" src="images/topic4-8.png" alt=""></div>
+                                <div class="img8box"><img class="img8" src="images/topic4-9.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <!-- <div class="swiper-button-prev"></div> -->
+                <div id="nextArrow" style="color: #fff;margin-right: 10px;" class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        // var svg1 = new Vivus('my-svg', {duration: 200});
+        // // var svg1 = new Vivus('svg1');
+        // $("#svg1").mouseenter(function() {
+        //     svg1.play()
+        // })
+        // 新闻通知切换
+        $("#part-1 .tab1").click(function() {
+            $("#part-1 .tab1").addClass("chose");
+            $("#part-1 .tab2").removeClass("chose");
+            $("#part-1 .news").css("display","block");
+            $("#part-1 .notice").css("display","none");
+        })
+        $("#part-1 .tab2").click(function() {
+            $("#part-1 .tab1").removeClass("chose");
+            $("#part-1 .tab2").addClass("chose");
+            $("#part-1 .news").css("display","none");
+            $("#part-1 .notice").css("display","block");
+        })
+        // 搜索引擎bing
+        function bingsearch(){
+            if($("input#searchKeyword").val()==""){
+                alert('请输入关键字');
+                return false;
+            }
+            // var key = $("input#searchKeyword").val()+"+site:pku.edu.cn";
+            var key = $("input#searchKeyword").val();
+            var url = 'https://cn.bing.com/search?ensearch=1&q=' + encodeURI(key);
+            window.open(url);
+            $(".search").css({"opacity":"0","visibility":"hidden"})
+            $("input#searchKeyword").val("");
+            }
+        function searchkeydown(e, but) {
+            var currKey=0,e=e||event;
+            var _this = $(but);
+            if(e.keyCode==13)
+            {
+                _this.click();
+                return false;
+            }
+        }
+        // 搜索框显示与隐藏
+        $("#search").click(function () {
+            $(".search").css({"opacity":"1","visibility":"visible"})
+        })
+        $("#search2").click(function () {
+            $(".search").css({"opacity":"1","visibility":"visible"})
+        })
+        $("#fullpage .delete").click(function () {
+            $(".search").css({"opacity":"0","visibility":"hidden"})
+        })
+        // 八大校交替显示
+        $(".firstgroup .box2").click(function() {
+            $(".firstgroup .box2").animate({"width":"54px","border-radius":"6px","opacity":"1"},"fast");
+            $(".firstgroup .box1").animate({"width":"12px","border-radius":"50%","opacity":"0.5"},"fast");
+            $(".firstgroup .odd2").css("display","block");
+            $(".firstgroup .even2").css("display","block");
+            $(".firstgroup .odd").css("display","none");
+            $(".firstgroup .even").css("display","none");
+        })
+        $(".firstgroup .box1").click(function() {
+            $(".firstgroup .box1").animate({"width":"54px","border-radius":"6px","opacity":"1"},"fast")
+            $(".firstgroup .box2").animate({"width":"12px","border-radius":"50%","opacity":"0.5"},"fast")
+            $(".firstgroup .odd").css("display","block");
+            $(".firstgroup .even").css("display","block");
+            $(".firstgroup .odd2").css("display","none");
+            $(".firstgroup .even2").css("display","none");
+        })
+
+        $(document).ready(function(){
+            var part2Top = $("#part-1").offset().top;//动画区域到整个页面顶部距离
+            var part4Top = $("#part-3").offset().top;//动画区域到整个页面顶部距离
+            var part5Top = $("#part-5").offset().top;//动画区域到整个页面顶部距离
+            var part6Top = $("#part-6").offset().top;//动画区域到整个页面顶部距离
+            var wTop = $(window).height();//可视区域的高度
+            window.onresize=function(){
+                var wTop=$(window).height();//缩放窗口这个高度会改变，需要再取得
+            } 
+            $("#body_b").scroll(function () {
+                // 进入可视区域
+                var dTop = $("#body_b").scrollTop(); //可视区域上面到页面顶部的距离，会实时改变
+                // part2 交互动画
+                if (dTop + wTop - 500 > part2Top) {     
+                    //动画播放事件
+                    $("#schoolBox .even").css({"opacity": "1","transform":"none"});
+                    $("#schoolBox .odd").css({"opacity": "1","transform":"none"});
+                    $("#schoolBox .even2").css({"opacity": "1","transform":"none"});
+                    $("#schoolBox .odd2").css({"opacity": "1","transform":"none"});
+                }
+                if (dTop + wTop -500< part2Top) {
+                    //动画播放事件
+                    $("#schoolBox .even").css({"opacity": "0","transform":"translateY(50px)"});
+                    $("#schoolBox .odd").css({"opacity": "0","transform":"translateY(-50px)"});
+                    $("#schoolBox .even2").css({"opacity": "0","transform":"translateY(50px)"});
+                    $("#schoolBox .odd2").css({"opacity": "0","transform":"translateY(-50px)"});
+                }
+                // part4 交互动画
+                if(dTop + wTop - 100 > part4Top){
+                    $("#part-4 .right-box").css({"opacity":"1","transform":"none"});
+                    $("#part-4 .left-box").css({"opacity":"1","transform":"none"});
+                }
+                if(dTop + wTop - 100 < part4Top){
+                    $("#part-4 .right-box").css({"opacity":"0","transform":"translateY(80px)"});
+                    $("#part-4 .left-box").css({"opacity":"0","transform":"translateY(-80px)"});
+                }
+                // part5 交互动画
+                if(dTop + wTop + 500 > part5Top){
+                    $("#part-5 .box-2").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .box-3").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .d1").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .d2").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .d3").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .d4").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .b1").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .b2").css({"opacity":"1","transform":"none"});
+                    $("#part-5 .b3").css({"opacity":"1","transform":"none"});
+                }
+                if(dTop + wTop +500 < part5Top){
+                    $("#part-5 .box-2").css({"opacity":"0","transform":"translateY(50px)"});
+                    $("#part-5 .box-3").css({"opacity":"0","transform":"translateX(50px)"});
+                    $("#part-5 .d1").css({"opacity":"0","transform":"translate(80px,80px)"});
+                    $("#part-5 .d2").css({"opacity":"0","transform":"translate(80px,80px)"});
+                    $("#part-5 .d3").css({"opacity":"0","transform":"translate(80px,80px)"});
+                    $("#part-5 .d4").css({"opacity":"0","transform":"translate(80px,80px)"});
+                    $("#part-5 .b1").css({"opacity":"0","transform":"translate(-80px,80px)"});
+                    $("#part-5 .b2").css({"opacity":"0","transform":"translate(-80px,80px)"});
+                    $("#part-5 .b3").css({"opacity":"0","transform":"translate(-80px,80px)"});
+                }
+                // part-6 交互动画
+                if(dTop + wTop + 800 > part6Top){
+                    $("#part-6 .left-box").css({"opacity":"1","transform":"none"});
+                    $("#part-6 .right-box").css({"opacity":"1","transform":"none"});
+                }
+                if(dTop + wTop + 800 < part6Top){
+                    $("#part-6 .left-box").css({"opacity":"0","transform":"translateX(-50px)"});
+                    $("#part-6 .right-box").css({"opacity":"0","transform":"translateX(50px)"});
+                }
+            });
+        });
+        // 首页banner与body_b内容切换
+        // 更新内容
+        var check = true;
+        setInterval(function () {
+         check = true;
+        }, 800);
+        $("#body_home").mousewheel(function (event) {
+            if (event.deltaY == -1 && check == true) {
+                check = false;
+                $("#body_b").animate({ "top": 0 }, 50, function () {
+                    $(".h1").removeClass("h1prev");
+                    $(".h1").addClass("h1unshow");
+                    $(".h2").removeClass("h2prev");
+                    $(".h2").addClass("h2show");
+                });
+            }  
+            
+        })
+        $("#body_b").mousewheel(function (event) {
+            var dTop = $("#body_b").scrollTop(); //可视区域上面到页面顶部的距离，会实时改变
+            if (event.deltaY == -1) {
+                    $("#d1").slideUp(100);
+            }
+            if (event.deltaY == 1) {
+                $("#d1").slideDown(100);
+            }
+            if (event.deltaY == 1 && dTop === 0 && check == true) {
+                check = false;
+                $("#body_b").animate({ "top": "100%" }, 50);
+                $(".h2").removeClass("h2show");
+                $(".h2").addClass("h2prev");
+                $(".h1").removeClass("h1unshow");
+                $(".h1").addClass("h1prev");
+            }
+        })
+        // 顶部导航栏h1显示隐藏
+        $(document).ready(function (index) {
+            $("#boxd2 > .a").each(function (index) {
+                $(this).mouseenter(function () {
+                    $(".nav-child > .showitem").eq(index).css("display", "block");
+                    $(".nav-child > .showitem").each(function (val) {
+                        if (val != index) {
+                            $(".nav-child > .showitem").eq(val).css("display", "none");
+                        }
+                    })
+                })
+                $("#boxd2").children(".nota").mouseenter(function () {
+                    $(".nav-child > .showitem").eq(index).css("display", "none");
+                })
+                $(".d1").mouseenter(function () {
+                    $(".nav-child > .showitem").eq(index).css("display", "none");
+                })
+                $(".nav-child > .showitem").mouseleave(function () {
+                    $(".nav-child > .showitem").eq(index).css("display", "none");
+                })
+            });
+        });
+        // 顶部导航栏h2显示隐藏
+        $(document).ready(function (index) {
+            $("#boxd2-2 > .a").each(function (index) {
+                $(this).mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display", "block");
+                    $(".nav-child-2 > .showitem").each(function (val) {
+                        if (val != index) {
+                            $(".nav-child-2 > .showitem").eq(val).css("display", "none");
+                        }
+                    })
+                })
+                $(".transparent").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display", "none");
+                })
+                $("#boxd2-2").children(".nota").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display", "none");
+                })
+                $(".d1").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display", "none");
+                })
+                $(".nav-child-2 > .showitem").mouseleave(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display", "none");
+                })
+            });
+        });
+        // 点击出现右侧轮播图
+        $("#button").click(function () {
+            mySwiper2.init();
+            $(".redButton1").css("opacity", 1);
+            $(".ruleWhite").css("display", "block");  //尺子初始化显示
+            $(".ruleRed").css("display", "none");
+            $("#nextArrow").css("color", "#fff");
+            $("#P").css("color", "#fff");
+            $("#back > .whiteIcon").css("display", "block");
+            $("#back > .blackIcon").css("display", "none");
+            // $.fn.fullpage.setAllowScrolling(false);
+            $("#body-r").animate({ "left": 0, "top": 0, "bottom": 0 }, 300);
+            $(".h1").removeClass("h1prev");
+            $(".h1").addClass("h1unshow");
+            $(".h2").removeClass("h2show");
+            $(".h2").addClass("h2prev");
+            $("#button").hide();
+
+            // 第一页动画 更新
+            $("#topic1 .word").css({"opacity": "1","transform":"scale(1)"});
+            $("#topic1 .td").css({"transform":"none","opacity":"1"});
+            setInterval(function() {
+                var x = 9;
+                var y = 0;
+                var rand = parseInt(Math.random() * (x - y + 1) + y);
+                // console.log(rand)
+                setTimeout(function(){
+                    $("#topic1 strong").eq(rand).children().addClass("animate");
+                },500)
+                $("#topic1 strong").eq(rand).children().removeClass("animate");
+            },5000)
+        });
+        // 点击返回首页
+        $("#back").click(function () {
+            // 若是在banner栏进入历史，则返回首页h1 下来
+            if ($("#body_b").css("top") !== "0px") {
+                $("#body-r").animate({ "left": "100%" }, 400, function () {
+                    $(".h1").removeClass("h1unshow");
+                    $(".h1").addClass("h1prev");
+                    $("#button").show()
+                    // 返回之后，清除所有样式
+                    $(".redButton1").css("opacity", 0);
+                    $(".redButton3").css("opacity", 0);
+                    $(".redButton4").css("opacity", 0);
+                    $(".ruleWhite").css("display", "none");
+                    $(".ruleRed").css("display", "none");
+                    // 返回首页，slide也返回到第一页
+
+                    // 第一页动画初始化 更新
+                    $("#topic1 .word").css({"opacity": "0","transform":"scale(0.9)"});
+                    $("#topic1 .td").css({"transform":"scaleX(0)","opacity":"0"});
+                    mySwiper2.slideTo(0);
+                });
+            }
+            // 若是在body-b栏进入历史，则返回首页h2 下来
+            else if ($("#body_b").css("top") == "0px") {
+                $("#body-r").animate({ "left": "100%" }, 400, function () {
+                    $("#d1").slideDown(100);
+                    $(".h2").removeClass("h2prev");
+                    $(".h2").addClass("h2show");
+                    $("#button").show()
+                    // 返回之后，清除所有样式
+                    $(".redButton1").css("opacity", 0);
+                    $(".redButton3").css("opacity", 0);
+                    $(".redButton4").css("opacity", 0);
+                    $(".ruleWhite").css("display", "none");
+                    $(".ruleRed").css("display", "none");
+                     // 返回首页，slide也返回到第一页
+                     mySwiper2.slideTo(0);
+                });
+            }
+        })
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            autoplay: true,
+            // init:false,    初始化。可以使用mySwiper.init();现在初始化
+            speed: 1000,
+            parallax: true,
+            pagination: { 
+                el: '.swiper-pagination-swipe1', 
+                clickable: true, 
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+        // 30年历史尺子样式显示与隐藏
+        $(".redButton1").click(function () {
+            $(".redButton1").css("opacity", 1);
+            $(".redButton3").css("opacity", 0);
+            $(".redButton4").css("opacity", 0);
+            mySwiper2.slideTo(0);
+        })
+        $(".redButton3").click(function () {
+            $(".redButton1").css("opacity", 0);
+            $(".redButton3").css("opacity", 1);
+            $(".redButton4").css("opacity", 0);
+            mySwiper2.slideTo(1);
+        })
+        $(".redButton4").click(function () {
+            $(".redButton1").css("opacity", 0);
+            $(".redButton3").css("opacity", 0);
+            $(".redButton4").css("opacity", 1);
+            mySwiper2.slideTo(2);
+        })
+        var mySwiper2 = new Swiper('.swiper-container-2', {
+            speed: 1500,
+            init: false,
+            // mousewheelControl: false,
+            // parallax: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                // prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function (swiper) {
+                    // alert('当前的slide序号是' + this.activeIndex);
+                },
+                slideChangeTransitionStart: function () {
+                    // alert(this.realIndex);
+                    if (this.activeIndex == 0) {
+                        // 控制切换时样式颜色转变
+                        $(".redButton1").css("opacity", 1);
+                        $(".redButton3").css("opacity", 0);
+                        $(".redButton4").css("opacity", 0);
+                        $(".ruleWhite").css("display", "block");
+                        $(".ruleRed").css("display", "none");
+                        $("#nextArrow").css("color", "#fff");
+                        $("#P").css("color", "#fff");
+                        $("#back > .whiteIcon").css("display", "block");
+                        $("#back > .blackIcon").css("display", "none");
+                        // 页内元素动画
+                        // 第一页
+                        $("#topic1 .word").css({"opacity": "1","transform":"scale(1)"});
+                        $("#topic1 .td").css({"transform":"none","opacity":"1"});
+                        setInterval(function() {
+                            var x = 9;
+                            var y = 0;
+                            var rand = parseInt(Math.random() * (x - y + 1) + y);
+                            // console.log(rand)
+                            setTimeout(function(){
+                                $("#topic1 strong").eq(rand).children().addClass("animate");
+                            },500)
+                            $("#topic1 strong").eq(rand).children().removeClass("animate");
+                        },5000)
+                        // 第二页
+                        $("#topic3 .textbox").css({"opacity": "0","transform":"translateY(-80px)"});
+                        $("#topic3 .bigone").css({"opacity": "0","transform":"translate(50px,-50px)"});
+                        $("#topic3 .littleone").css({"opacity": "0","transform":"translate(-50px,50px)"});
+                        $("#topic3 .word").css({"opacity": "0","transform":"scale(0.9)"});
+                        // 第三页
+                        $("#topic4 .word").css({"opacity": "0","transform":"scale(0.9)"});
+                        $("#topic4 img").css({"transform":"scale(1.2)"})
+                    }
+                    else if (this.activeIndex == 1) {
+                        // 控制切换时样式颜色转变
+                        $("#nextArrow").css("color", "RGBA(196, 192, 191, 1)");
+                        $("#P").css("color", "#333");
+                        $("#back > .whiteIcon").css("display", "none");
+                        $("#back > .blackIcon").css("display", "block");
+                        $(".ruleWhite").css("display", "none");
+                        $(".ruleRed").css("display", "block");
+                        $(".redButton1").css("opacity", 0);
+                        $(".redButton3").css("opacity", 1);
+                        $(".redButton4").css("opacity", 0);
+                        $(".ruleWhite").css("display", "none");
+                        $(".ruleRed").css("display", "block");
+                        // 页内元素动画
+                        // 第一页
+                        $("#topic1 .word").css({"opacity": "0","transform":"scale(0.9)"});
+                        $("#topic1 .td").css({"transform":"scaleX(0)","opacity":"0"});
+                        // 第二页
+                        $("#topic3 .textbox").css({"opacity": "1","transform":"none"});
+                        $("#topic3 .bigone").css({"opacity": "1","transform":"none"});
+                        $("#topic3 .littleone").css({"opacity": "1","left":"-120px","bottom":"-160px"});
+                        $("#topic3 .word").css({"opacity": "1","transform":"scale(1)"});
+                        // 第三页
+                        $("#topic4 .word").css({"opacity": "0","transform":"scale(0.9)"});
+                        $("#topic4 img").css({"transform":"scale(1.2)"})
+                    }
+                    else if (this.activeIndex == 2) {
+                        // 控制切换时样式颜色转变
+                        $(".redButton1").css("opacity", 0);
+                        $(".redButton3").css("opacity", 0);
+                        $(".redButton4").css("opacity", 1);
+                        $(".ruleWhite").css("display", "block");
+                        $(".ruleRed").css("display", "none");
+                        $("#P").css("color", "#fff");
+                        $("#back > .whiteIcon").css("display", "block");
+                        $("#back > .blackIcon").css("display", "none");
+                        $("#nextArrow").css("color", "#fff");
+                        // 页内元素动画
+                        // 第一页
+                        $("#topic1 .word").css({"opacity": "0","transform":"scale(0.9)"});
+                        $("#topic1 .td").css({"transform":"scaleX(0)","opacity":"0"});
+                        // 第二页
+                        $("#topic3 .textbox").css({"opacity": "0","transform":"translateY(-80px)"});
+                        $("#topic3 .bigone").css({"opacity": "0","transform":"translate(50px,-50px)"});
+                        $("#topic3 .littleone").css({"opacity": "0","transform":"translate(-50px,50px)"});
+                        $("#topic3 .word").css({"opacity": "0","transform":"scale(0.9)"});
+                        // 第三页
+                        $("#topic4 .word").css({"opacity": "1","transform":"scale(1)"});
+                        $("#topic4 img").css({"transform":"none"})
+                    }
+                },
+            },
+        })
+        // 30年
+        var mySwiper3 = new Swiper('.swiper-container-3', {
+            speed: 800,
+            parallax: true,
+            // 触摸滑动
+            // noSwipingClass: 'scroll-wrap',
+            loop: true,
+            init: false,
+            autoplay: false,
+            mousewheel:true,
+            navigation: {
+                nextEl: '.swiper-button-next-son',
+                prevEl: '.swiper-button-prev-son',
+            },
+        })
+        $(".navigation-his > .text").click(function () {
+            $("#historyDetail").animate({ "top": "100%" }, 1000);
+            $("#back").show();
+            $("#nextArrow").show();
+            $(".ruleWhite").css("display", "none");
+            $(".ruleRed").css("display", "block");
+        })
+        $("#history").click(function () {
+            mySwiper3.init();
+            $("#historyDetail").animate({ "top": 0 }, 1000);
+            $("#back").hide();
+            $("#nextArrow").hide();
+            $(".ruleWhite").css("display", "none");
+            $(".ruleRed").css("display", "none");
+        })
+        //鼠标滑过pagination控制swiper切换
+        // for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+        //     mySwiper.pagination.bullets[i].onmouseover = function () {
+        //         this.click();
+        //     };
+        // }      
+    </script>
+
+</body>
+
+</html>

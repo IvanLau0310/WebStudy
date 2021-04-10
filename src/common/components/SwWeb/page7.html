@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招商招聘</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- mousewheel 鼠标滚轮插件 -->
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <div class="search">
+        <div id="delete" class="delete"><img src="images/delete.png" alt=""></div>
+        <div class="search_box">
+            <input id="searchKeyword" type="text" placeholder="Search..." class="kw" onkeydown="searchkeydown(event, '#searchOk')">
+           <input type="button" placeholder="" id="searchOk" onclick="bingsearch();return false;" class="ok" value="搜索">
+       </div>
+    </div>
+    <div class="h2">
+        <div id="d1" class="d1">
+            <div class="block">
+                <div class="nav_l">
+                    <a href=""><div class="p">学生</div></a><i>|</i>
+                    <a href=""><div class="p">教职</div></a><i>|</i>
+                    <a href=""><div class="p">访客</div></a><i>|</i>
+                    <a href=""><div class="p">招聘</div></a>
+                </div>
+                <div class="nav_r">
+                    <div class="item"><img src="images/email.png" alt=""><a href=""><div class="p">办公邮箱</div></a></div>
+                    <div class="item"><img src="images/system.png" alt=""><a href=""><div class="p">办公系统</div></a></div>
+                    <div class="item"><img src="images/book.png" alt=""><a href=""><div class="p">智慧校园</div></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="d2">
+            <div id="boxd2-2" class="box">
+                <div style="position: absolute;top: 0;left: 0;width: 100%;height: 15px;" class="transparent"></div>
+                <a href="index.html"><img class="logo nota" src="images/schoolLog2.png" alt=""></a>
+                <a class="nota" href="index.html">首页</a>
+                <a class="a" href="page2.html">走进深外<div class="line"></div></a>
+                <a class="a" href="page3.html">学校资讯<div class="line"></div></a>
+                <a class="a" href="page4.html">教育教学<div class="line"></div></a>
+                <a class="a" href="page5.html">学生空间<div class="line"></div></a>
+                <a class="nota" href="page6.html">学校视频<div class="line"></div></a>
+                <a class="a" href="page7.html">招生招聘<div class="line"></div></a>
+                <div class="iconbox nota">
+                    <img id="search2" class="icon" src="images/search2.png" alt="">
+                    <img class="icon" src="images/EN2.png" alt="">
+                </div>
+                <div class="nav-child-2">
+                    <div class="showitem">
+                        <div style="left: 10%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-1.png" alt="">
+                                <div class="l-r">
+                                    <p>高标准</p>
+                                    <p>有特色</p>
+                                    <p>现代化</p>
+                                    <p>办国内外一流名校</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="page2.html">学校介绍</a></div>
+                                <div class="item"><a href="">学校文化</a></div>
+                                <div class="item"><a href="">学校荣誉</a></div>
+                                <div class="item"><a href="">学校刊物</a></div>
+                                <div class="item"><a href="">规章制度</a></div>
+                                <div class="item"><a href="">党建工作</a></div>
+                                <div class="item"><a href="">校友会</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showitem">
+                        <div style="left: 15%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/pageh-1.png" alt="">
+                                <div class="l-r">
+                                    <p>振奋精神</p>
+                                    <p>紧密团结</p>
+                                    <p>攀登新的高峰</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="page8-1.html">学校新闻</a></div>
+                                <div class="item"><a href="page8-2.html">通知公告</a></div>
+                                <div class="item"><a href="page8-3.html">招标公告</a></div>
+                                <div class="item"><a href="page8-4.html">媒体报道</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showitem">
+                        <div style="left: 25%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-3.png" alt="">
+                                <div class="l-r">
+                                    <p>教书育人</p>
+                                    <p>治学严谨</p>
+                                    <p>勤奋博学</p>
+                                    <p>尊师友爱</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">课程建设</a></div>
+                                <div class="item"><a href="">教研活动</a></div>
+                                <div class="item"><a href="">名师工作室</a></div>
+                                <div class="item"><a href="">教师培训</a></div>
+                                <div class="item"><a href="">电子资源</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showitem">
+                        <div style="left: 30%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-4.png" alt="">
+                                <div class="l-r">
+                                    <p>以人为本</p>
+                                    <p>和谐发展</p>
+                                    <p>为学生的终身幸福奠基</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">团委</a></div>
+                                <div class="item"><a href="">少先队</a></div>
+                                <div class="item"><a href="">学长团</a></div>
+                                <div class="item"><a href="">社团联合会</a></div>
+                                <div class="item"><a href="">广电中心</a></div>
+                                <div class="item"><a href="">六大节</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="showitem">
+                        <div style="right: 10%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                    src="images/showbox-5.png" alt="">
+                                <div class="l-r">
+                                    <p>高标准</p>
+                                    <p>有特色</p>
+                                    <p>现代化</p>
+                                    <p>办国内外一流名校</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">学校介绍</a></div>
+                                <div class="item"><a href="">学校文化</a></div>
+                                <div class="item"><a href="">学校荣誉</a></div>
+                                <div class="item"><a href="">学校刊物</a></div>
+                                <div class="item"><a href="">规章制度</a></div>
+                                <div class="item"><a href="">党建工作</a></div>
+                                <div class="item"><a href="">校友会</a></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="showitem">
+                        <div style="right: 5%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-6.png" alt="">
+                                <div class="l-r">
+                                    <p>以人为本</p>
+                                    <p>和谐发展</p>
+                                    <p>为学生的终身幸福奠基</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">学生招生</a></div>
+                                <div class="item"><a href="">教师招聘</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page7">
+        <div class="banner-2">
+            <img src="images/page7-1.jpg" alt="">
+            <!-- <div class="word-box">
+                <div class="title">招生招聘</div>
+                <div class="title-2">
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">学生招生</a>
+                    </div>
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">少先队</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="main">
+            <div class="part-1">
+                <div class="innerbox">
+                    <div class="left-box">
+                        <img src="images/page7-1-1.jpg" alt="">
+                    </div>
+                    <div class="right-box">
+                        <div class="head">
+                            <p style="font-size: 32px;">学生招生</p>
+                            <a href="" class="more">
+                                <div class="img">
+                                    <img class="clock" src="images/clock.png" alt="">
+                                    <img class="hoverclock" src="images/clock2.png" alt="">
+                                </div>
+                                <p>查看更多</p>
+                            </a>
+                        </div>
+                        <div class="bottom">
+                            <div class="box">
+                                <a href="" class="item">高中部招生</a>
+                                <a href="" class="item">初中部招生</a>
+                                <a href="" class="item">国际部招生</a>
+                                <a href="" class="item">小学部招生</a>
+                                <a href="" class="item">龙华高中部招生</a>
+                                <a href="" class="item">湾区学校招生</a>
+                                <a href="" class="item">龙华初中部招生</a>
+                                <a href="" class="item">宝安校区招生</a>
+                                <a href="" class="item">招生申请</a>
+                                <a href="" class="item">资料下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part-2">
+                <!-- 延用样式part-3 -->
+                <div class="part-3" style="background: #f4f4f4;padding: 0;">
+                    <div class="innerbox">
+                        <div class="box-t"><a href=""><img style="width: 1200px;height: auto;" src="images/page7-3.png" alt=""></a>
+                            <div class="box-l">
+                                <div class="name">教师招聘</div>
+                                <a href="" class="more">
+                                    <div class="img">
+                                        <img class="clock" src="images/clock.png" alt="">
+                                        <img class="hoverclock" src="images/clock2.png" alt="">
+                                    </div>
+                                    <div class="text">查看更多</div>
+                                </a>
+                            </div>
+                            <div class="box-r">
+                                <a href="" class="item">· 高中部招聘</a>
+                                <a href="" class="item">· 初中部招聘</a>
+                                <a href="" class="item">· 小学部招聘</a>
+                                <a href="" class="item">· 国际部招聘</a>
+                                <a href="" class="item">· 龙华高中部招聘</a>
+                                <a href="" class="item">· 龙华初中部招聘</a>
+                                <a href="" class="item">· 湾区学校招聘</a>
+                                <a href="" class="item">· 宝安校区招聘</a>
+                            </div>
+                        </div>
+                        <div class="box-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="box-1">
+                    <div class="dock1">
+                        <div class="item"><a href="#">文理书院</a></div>
+                        <div class="item"><a href="#">国际书院</a></div>
+                        <div class="item"><a href="#">外语书院</a></div>
+                        <div class="item"><a href="#">创新书院</a></div>
+                        <div class="item"><a href="#">燕南学堂</a></div>
+                        <div class="item"><a href="page10.html">联系我们</a></div>
+                        <div class="item"><a href="#">网站地图</a></div>
+                        <div class="item wx">
+                            <div class="img">
+                                <img src="images/wxIcon.png" alt="">
+                                <div class="qrcode">
+                                    <img style="width: 120px;height: 120px;" src="images/wxqrcode.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="dock2">
+                        <div class="logo"><img src="images/schoolLogo.png" alt=""></div>
+                        <div class="others">
+                            <p>版权所有©深圳外国语学校</p><i>|</i>
+                            <p>地址：广东省深圳市红荔路2005号</p><i>|</i>
+                            <p>电话：0755-25652582</p><i>|</i>
+                            <p>反馈意见：sz5180183@136.com</p><i>|</i>
+                            <p>邮编：518000</p><i>|</i>
+                            <p>粤ICP号12014937号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 搜索框显示与隐藏
+        $("#search2").click(function () {
+            $(".search").css({"opacity":"1","visibility":"visible"})
+        })
+        $("#delete").click(function () {
+            $(".search").css({"opacity":"0","visibility":"hidden"})
+        })
+        // 搜索引擎bing
+        function bingsearch(){
+            if($("input#searchKeyword").val()==""){
+                alert('请输入关键字');
+                return false;
+            }
+            // var key = $("input#searchKeyword").val()+"+site:pku.edu.cn";
+            var key = $("input#searchKeyword").val();
+            var url = 'https://cn.bing.com/search?ensearch=1&q=' + encodeURI(key);
+            window.open(url);
+            $(".search").css({"opacity":"0","visibility":"hidden"})
+            $("input#searchKeyword").val("");
+            }
+        function searchkeydown(e, but) {
+            var currKey=0,e=e||event;
+            var _this = $(but);
+            if(e.keyCode==13)
+            {
+                _this.click();
+                return false;
+            }
+        }
+        $(document).ready(function(){
+            $(".part-1 .left-box").css({"opacity": "1","transform":"none"});
+            $(".part-1 .right-box").css({"opacity": "1","transform":"none"});
+        });
+        // 顶部导航栏h2显示隐藏
+        $(document).ready(function (index) {
+            $("#boxd2-2 > .a").each(function (index) {
+                $(this).mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","block");
+                    $(".nav-child-2 > .showitem").each(function (val) {
+                        if (val != index) {
+                            $(".nav-child-2 > .showitem").eq(val).css("display","none");
+                        }
+                    })
+                })
+                $(".transparent").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display", "none");
+                })
+                $("#boxd2-2").children(".nota").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","none");
+                })
+                $(".d1").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","none");
+                })
+                $(".nav-child-2 > .showitem").mouseleave(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","none");
+                })
+            });
+        });
+        $(document).mousewheel(function (event) {
+            if (event.deltaY == -1) {
+                $("#d1").slideUp("fast");
+            } else if (event.deltaY == 1) {
+                $("#d1").slideDown("fast");
+            }
+            // var part2Top = $("#part-2").offset().top;
+            var wTop = $(window).height();//可视区域的高度
+            // console.log(wTop)
+            window.onresize = function () {
+                var wTop = $(window).height();//缩放窗口这个高度会改变，需要再取得
+            }
+            // $(window).scroll(function(){
+            var dTop = $(document).scrollTop(); //可视区域上面到页面顶部的距离，会实时改变
+            // console.log(dTop)
+            //进入可视区域
+            // if(dTop+wTop-200 > part2Top){
+            //     //动画播放事件
+            //     alert('1');
+            //     $("#part-2").css("opacity","0");
+            // };
+            // });                       
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>走进深外</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- mousewheel 鼠标滚轮插件 -->
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <div class="search">
+        <div id="delete" class="delete"><img src="images/delete.png" alt=""></div>
+        <div class="search_box">
+            <input id="searchKeyword" type="text" placeholder="Search..." class="kw" onkeydown="searchkeydown(event, '#searchOk')">
+           <input type="button" placeholder="" id="searchOk" onclick="bingsearch();return false;" class="ok" value="搜索">
+       </div>
+    </div>
+    <div class="h2">
+        <div id="d1" class="d1">
+            <div class="block">
+                <div class="nav_l">
+                    <a href=""><div class="p">学生</div></a><i>|</i>
+                    <a href=""><div class="p">教职</div></a><i>|</i>
+                    <a href=""><div class="p">访客</div></a><i>|</i>
+                    <a href=""><div class="p">招聘</div></a>
+                </div>
+                <div class="nav_r">
+                    <div class="item"><img src="images/email.png" alt=""><a href=""><div class="p">办公邮箱</div></a></div>
+                    <div class="item"><img src="images/system.png" alt=""><a href=""><div class="p">办公系统</div></a></div>
+                    <div class="item"><img src="images/book.png" alt=""><a href=""><div class="p">智慧校园</div></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="d2">
+            <div id="boxd2-2" class="box">
+                <div style="position: absolute;top: 0;left: 0;width: 100%;height: 15px;" class="transparent"></div>
+                <a href="index.html"><img class="logo nota" src="images/schoolLog2.png" alt=""></a>
+                <a class="nota" href="index.html">首页</a>
+                <a class="a" href="page2.html">走进深外<div class="line"></div></a>
+                <a class="a" href="page3.html">学校资讯<div class="line"></div></a>
+                <a class="a" href="page4.html">教育教学<div class="line"></div></a>
+                <a class="a" href="page5.html">学生空间<div class="line"></div></a>
+                <a class="nota" href="page6.html">学校视频<div class="line"></div></a>
+                <a class="a" href="page7.html">招生招聘<div class="line"></div></a>
+                <div class="iconbox nota">
+                    <img id="search2" class="icon" src="images/search2.png" alt="">
+                    <img class="icon" src="images/EN2.png" alt="">
+                </div>
+                <div class="nav-child-2">
+                    <div class="showitem">
+                        <div style="left: 10%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-1.png" alt="">
+                                <div class="l-r">
+                                    <p>高标准</p>
+                                    <p>有特色</p>
+                                    <p>现代化</p>
+                                    <p>办国内外一流名校</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="page2.html">学校介绍</a></div>
+                                <div class="item"><a href="">学校文化</a></div>
+                                <div class="item"><a href="">学校荣誉</a></div>
+                                <div class="item"><a href="">学校刊物</a></div>
+                                <div class="item"><a href="">规章制度</a></div>
+                                <div class="item"><a href="">党建工作</a></div>
+                                <div class="item"><a href="">校友会</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showitem">
+                        <div style="left: 15%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/pageh-1.png" alt="">
+                                <div class="l-r">
+                                    <p>振奋精神</p>
+                                    <p>紧密团结</p>
+                                    <p>攀登新的高峰</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="page8-1.html">学校新闻</a></div>
+                                <div class="item"><a href="page8-2.html">通知公告</a></div>
+                                <div class="item"><a href="page8-3.html">招标公告</a></div>
+                                <div class="item"><a href="page8-4.html">媒体报道</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showitem">
+                        <div style="left: 25%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-3.png" alt="">
+                                <div class="l-r">
+                                    <p>教书育人</p>
+                                    <p>治学严谨</p>
+                                    <p>勤奋博学</p>
+                                    <p>尊师友爱</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">课程建设</a></div>
+                                <div class="item"><a href="">教研活动</a></div>
+                                <div class="item"><a href="">名师工作室</a></div>
+                                <div class="item"><a href="">教师培训</a></div>
+                                <div class="item"><a href="">电子资源</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showitem">
+                        <div style="left: 30%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-4.png" alt="">
+                                <div class="l-r">
+                                    <p>以人为本</p>
+                                    <p>和谐发展</p>
+                                    <p>为学生的终身幸福奠基</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">团委</a></div>
+                                <div class="item"><a href="">少先队</a></div>
+                                <div class="item"><a href="">学长团</a></div>
+                                <div class="item"><a href="">社团联合会</a></div>
+                                <div class="item"><a href="">广电中心</a></div>
+                                <div class="item"><a href="">六大节</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="showitem">
+                        <div style="right: 10%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                    src="images/showbox-5.png" alt="">
+                                <div class="l-r">
+                                    <p>高标准</p>
+                                    <p>有特色</p>
+                                    <p>现代化</p>
+                                    <p>办国内外一流名校</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">学校介绍</a></div>
+                                <div class="item"><a href="">学校文化</a></div>
+                                <div class="item"><a href="">学校荣誉</a></div>
+                                <div class="item"><a href="">学校刊物</a></div>
+                                <div class="item"><a href="">规章制度</a></div>
+                                <div class="item"><a href="">党建工作</a></div>
+                                <div class="item"><a href="">校友会</a></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="showitem">
+                        <div style="right: 5%;" class="showbox">
+                            <div class="left-box">
+                                <img style="margin-right: 24px;width: 113px;height: 113px;"
+                                     src="images/showbox-6.png" alt="">
+                                <div class="l-r">
+                                    <p>以人为本</p>
+                                    <p>和谐发展</p>
+                                    <p>为学生的终身幸福奠基</p>
+                                </div>
+                            </div>
+                            <div class="right-box">
+                                <div class="item"><a href="">学生招生</a></div>
+                                <div class="item"><a href="">教师招聘</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page2">
+        <div class="banner-2">
+            <img src="images/page2-1.jpg" alt="">
+            <!-- <div class="word-box">
+                <div class="title">走进深外</div>
+                <div class="title-2">
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">学校介绍</a>
+                    </div>
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">学校文化</a>
+                    </div>
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">学校荣誉</a>
+                    </div>
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                         <a href="">规章制度</a>
+                    </div>
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">规章制度</a>
+                    </div>
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">党建工作</a>
+                    </div>
+                    <div class="item">
+                        <img class="arrow" style="width: 15px;" src="images/arrow.png" alt="">
+                        <a href="">校友会</a>
+                    </div> 
+                </div>
+            </div> -->
+        </div>
+        <div class="main">
+            <div class="innerBox">
+                <div class="left-box">
+                    <img src="images/page2-2.png" alt="">
+                    <img src="images/page2-3.png" style="margin-left: 29px;" alt="">
+                </div>
+                <div class="right-box">
+                    <div class="item">
+                        <div class="left"><span>1990</span><span class="minus">-</span><span>2003</span></div>
+                        <div class="right" style="border-bottom: 1px solid #f4f4f4;"> 深圳外国语学校创办于1990年，是市教育局直属重点学校、广东省一级学校、全国文明单位、是教育部确立的全国依法治校示范校、全国首批
+                            13所可保送20%高中毕业生上重点大学的外国语学校之一。<br/><br/>
+    
+                            二十多年来，深外的办学规模不断发展，目前拥有一校六部，包括一所小学、一所初中、两所高中以及两所国际部，是整个深圳基础教育中办学
+                            种类最多、规模最大的学校之一。<br/><br/>
+    
+                            目前，学校六个教学部共有教职工818人，学生6205名，办学实力雄厚。<br/><br/>
+    
+                            学校本部（含初高中）创办于1990年，从2000年起相继创办了深外东海附属小学、深外龙岗分校、深外国际部。三个校部亦都以教育教学质量
+                            优异受到社会和家长的广泛好评。<br/><br/>
+    
+                            深外东海附属小学创办于2000年，现有学生近1000人，属国有民办型全日制小学，位于东海花园住宅区，校园环境优美，教学配套设施先进，
+                            继承和发扬深圳外国语学校优良的校风、学风和教风，致力培养全面发展、综合素质高又具有外语特长的优秀学生。<br/><br/>
+    
+                            深外龙岗分校创办于2002年，是学校与李朗业兴实业有限公司合作创办的国有民办型全寄宿制初级中学，有36个教学班。合作办学12年间，分
+                            校教育教学、内外管理、质量要求、育人标准与深圳外国语学校本部一脉相承，办学质量快速提升，至2014年合作期满，分校改名百合外国语学校
+                            独立办学之时，已经是深圳市数一数二的初中名校。<br/><br/>
+    
+                            2003年9月，校本部初、高中实现分点办学。初中本部仍位于福田区原址；高中部迁入梧桐山下、盐田港畔的新校区。高中部占地13万多平方
+                            米，有60个教学班，现有学生2600多人。高中部为全寄宿制学校，每年可提供近千个优质学位，其录取分数线始终位居全市前三，成为市民首选学
+                            校之一。初中部亦同样为深圳市民及学子所青睐。</div>
+                    </div>
+                    <div class="item">
+                        <div style="margin-top: 40px;" class="left"><span>2004</span><span class="minus">-</span><span>今</span></div>
+                        <div class="right" style="padding-top: 49px;"> 深圳外国语学校国际部2011年9月建成招生。它是为适应深圳市国际化进程的需求而建，位于南山区深圳湾畔，设计规模54个教学班，为外国来
+                            深人员子女提供从幼儿园到高中的系列优质教育服务，是深圳市委、市政府高度重视的教育实体。办学六年成绩显著，获得IB(国际文凭组织)三项认
+                            证，成为IBPYP、IBMYP、IBDP世界学校，顺利通过CIS、WASC两项国际教育权威认证，成为深圳市第一所同时获得两大权威国际机构认证的国际
+                            学校。<br/><br/>
+    
+                            受深圳市教育局的委托，学校承办的深圳外国语学校（龙华）高中部（原立项名为“深圳市第八高级中学”）和深圳外国语学校（龙岗）国际部
+                            2017年9月正式开办。<br/><br/>
+                            深圳外国语学校（龙华）高中部是由深圳市政府举办、市工务署建设、市教育局交由深圳外国语学校筹办的全寄宿制公办普通高级中学，由深圳
+                            外国语学校统一负责组织管理。学校建筑融汇了观澜地区特有的客家文化，总建筑面积超过了7.5万平方米，设计规模60个教学班，可容纳3000名师
+                            生。2017年首届招收新生270名。<br/><br/>
+    
+                            深圳外国语学校（龙岗）国际部是顺应加快提升龙华坂田片区教育配套服务水平的要求，在市委市政府支持下，由深圳市教育局和龙岗区教育局
+                            两级教育行政部门和深圳外国语学校共同努力下创办的一所为港澳台及外籍人士子女提供优质教育的国际学校。2017年首届招收小学一至三年级三
+                            个班级，29名学生，借科学高中部分校舍举办。学校永久校区坐落于龙岗坂田街道落坑片区岗头水库周边，占地5.1万平方米。<br/><br/>
+    
+                            除现有的“一校六部”，投资7.3亿元的深圳外国语学校龙华校区（含小学部、初中部、国际部）也已动工建设，将为民众提供更多优质学位。<br/><br/>
+    
+                            二十余年的奋斗下，深外已然形成了外语特色、德育特色、体育特色、社团特色等构成的特色体系，并以出色的成绩和学子的高素质成为了名副
+                            其实的广东名校、全国新秀。<br/><br/>
+    
+                            深外全面开设了必修课程，建设了丰富多彩的选修课程，培育了近百个学生社团，定期举办科技节、艺术节、辩论节、体育节、外语节、美食节，
+                            与国内外名城和名校建立了广泛的联系和长期的合作，创办和参与多种多样的活动，培养和组织学生参与各种竞赛，同时不断完善建设包括国内高考
+                            保送、国际课程实验班、中外交换生项目以及与国外顶尖高校开设“绿色通道”项目在内的多渠道“成才立交桥”，为学子的学习和锻炼提供了丰富
+                            的资源和平台，为学子的特长发展及脱颖而出提供了广阔的空间和机会，为学子的进阶深造铺设了便利的渠道和阶梯。<br/><br/>
+    
+                            深外外语特色突出，开设有英语、日语、法语、德语、西班牙语和俄语六个语种，是国内开设外语语种最多的学校之一，并扎实地打造了外语教
+                            学的“深外质量”，六年就读深外的高三毕业生的外语能力普遍达到了大学四级水平。在突出外语特色的同时，学校始终通过努力确保了中学阶段各
+                            门基础学科教学质量不断提高。<br/><br/>
+    
+                            自有毕业学生起，深外中考便稳居全市前一前二，高考重点率和本科率多年名列深圳市第一、全省前茅。2015 年高考重点率达91.01%，2016 年
+                            重点率突破95.07%，位居全省第一，2017年重点率达95%，维持高位运行；本科率连续23年达100%。自1998年以来，共有51人次获得高考省市状
+                            元。不仅中考高考成绩优异，学生还在各类国家级及国际性赛事中多次摘得桂冠。在保送方面，虽受政策调整影响，保送生人数缩减，我校保送生人
+                            数仍居广东省第一、全国前三甲。2015年保送生185人，2016年保送生167人，2017年保送生149人，其中11人保送北大清华。截至2017 年，保送
+                            生总数多达1924人，进入北大、清华、浙大、复旦、北外大等国内知名学府深造。<br/><br/>
+    
+                            在出国留学方面，学校为满足学生多元化需求，通过多种形式拓宽学生留学渠道，助力深外学子扬帆出海，出国深造。<br/><br/>
+    
+                            高中部办有国际课程班中心，提供AP课程和A-level课程，实施全外教教学，课程设置与美国、英国高中同步，毕业生过半被排名前30英美名校
+                            录取，95%以上进入排名前50的名校深造，多名同学获得了学校颁发的高额奖学金。七年来共有602人入读世界名牌大学，连续七年保持100% 被海
+                            外大学录取的纪录。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="picbox">
+                <img style="width: 100%;height:auto" src="images/page2-b.jpg" alt="">
+            </div>
+            <div class="footer">
+                <div class="box-1">
+                    <div class="dock1">
+                        <div class="item"><a href="#">文理书院</a></div>
+                        <div class="item"><a href="#">国际书院</a></div>
+                        <div class="item"><a href="#">外语书院</a></div>
+                        <div class="item"><a href="#">创新书院</a></div>
+                        <div class="item"><a href="#">燕南学堂</a></div>
+                        <div class="item"><a href="page10.html">联系我们</a></div>
+                        <div class="item"><a href="#">网站地图</a></div>
+                        <div class="item wx">
+                            <div class="img">
+                                <img src="images/wxIcon.png" alt="">
+                                <div class="qrcode">
+                                    <img style="width: 120px;height: 120px;" src="images/wxqrcode.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="dock2">
+                        <div class="logo"><img src="images/schoolLogo.png" alt=""></div>
+                        <div class="others">
+                            <p>版权所有©深圳外国语学校</p><i>|</i>
+                            <p>地址：广东省深圳市红荔路2005号</p><i>|</i>
+                            <p>电话：0755-25652582</p><i>|</i>
+                            <p>反馈意见：sz5180183@136.com</p><i>|</i>
+                            <p>邮编：518000</p><i>|</i>
+                            <p>粤ICP号12014937号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 搜索框显示与隐藏
+        $("#search2").click(function () {
+            $(".search").css({"opacity":"1","visibility":"visible"})
+        })
+        $("#delete").click(function () {
+            $(".search").css({"opacity":"0","visibility":"hidden"})
+        })
+        // 搜索引擎bing
+        function bingsearch(){
+            if($("input#searchKeyword").val()==""){
+                alert('请输入关键字');
+                return false;
+            }
+            // var key = $("input#searchKeyword").val()+"+site:pku.edu.cn";
+            var key = $("input#searchKeyword").val();
+            var url = 'https://cn.bing.com/search?ensearch=1&q=' + encodeURI(key);
+            window.open(url);
+            $(".search").css({"opacity":"0","visibility":"hidden"})
+            $("input#searchKeyword").val("");
+            }
+        function searchkeydown(e, but) {
+            var currKey=0,e=e||event;
+            var _this = $(but);
+            if(e.keyCode==13)
+            {
+                _this.click();
+                return false;
+            }
+        }
+        // 顶部导航栏h2显示隐藏
+        $(document).ready(function (index) {
+            $("#boxd2-2 > .a").each(function (index) {
+                $(this).mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","block");
+                    $(".nav-child-2 > .showitem").each(function (val) {
+                        if (val != index) {
+                            $(".nav-child-2 > .showitem").eq(val).css("display","none");
+                        }
+                    })
+                })
+                $(".transparent").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display", "none");
+                })
+                $("#boxd2-2").children(".nota").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","none");
+                })
+                $(".d1").mouseenter(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","none");
+                })
+                $(".nav-child-2 > .showitem").mouseleave(function () {
+                    $(".nav-child-2 > .showitem").eq(index).css("display","none");
+                })
+            });
+        });
+        $(document).mousewheel(function (event) {
+            if (event.deltaY == -1) {
+                $("#d1").slideUp(100);
+            } else if (event.deltaY == 1) {
+                $("#d1").slideDown(100);
+            }
+            // var part2Top = $("#part-2").offset().top;
+            var wTop = $(window).height();//可视区域的高度
+            // console.log(wTop)
+            window.onresize = function () {
+                var wTop = $(window).height();//缩放窗口这个高度会改变，需要再取得
+            }
+            // $(window).scroll(function(){
+            var dTop = $(document).scrollTop(); //可视区域上面到页面顶部的距离，会实时改变
+            // console.log(dTop)
+            //进入可视区域
+            // if(dTop+wTop-200 > part2Top){
+            //     //动画播放事件
+            //     alert('1');
+            //     $("#part-2").css("opacity","0");
+            // };
+            // });                       
+        });
+    </script>
+</body>
+
+</html>
